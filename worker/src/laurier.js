@@ -136,7 +136,7 @@ export const PAGES = [
 
 const TTL_S = 6 * 3600;
 const PARSER_VERSION = 3; // bump when html.js changes so cached pages are parsed again
-const USER_AGENT = "PC141-Course-Assistant/1.0 (+https://nobodyknownothing.github.io/WLU-RAG-Prototype/)";
+const USER_AGENT = "PC141-Course-Assistant/1.0 (+https://nobodyknownothing.github.io/pc141-assistant/)";
 const memory = new Map(); // url -> parsed page, per Worker instance
 
 export async function loadPage(entry, ctx) {

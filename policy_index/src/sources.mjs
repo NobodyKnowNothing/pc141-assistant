@@ -13,7 +13,7 @@ import { classify, policyMeta } from "../../scripts/build_policy_index.mjs";
 export const SITEMAP = "https://www.wlu.ca/sitemap.xml";
 export const REGISTER = "https://www.wlu.ca/about/governance/policies.html";
 export const POLICY_PREFIX = "https://www.wlu.ca/about/governance/assets/resources/";
-export const USER_AGENT = "PC141-Course-Assistant/1.0 (+https://nobodyknownothing.github.io/WLU-RAG-Prototype/)";
+export const USER_AGENT = "PC141-Course-Assistant/1.0 (+https://nobodyknownothing.github.io/pc141-assistant/)";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 

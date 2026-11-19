@@ -2,7 +2,7 @@
 
 A question-answering assistant for students in **PC141 at Wilfrid Laurier University**. It answers administrative questions, such as "When is my lab?", "What do I do if I miss it?", "Where do I submit?" or "What is the penalty for a first plagiarism offence?". Every statement in an answer cites the section it came from, quotes it, and is checked against that quote.
 
-- **Site:** <https://nobodyknownothing.github.io/WLU-RAG-Prototype/>
+- **Site:** <https://nobodyknownothing.github.io/pc141-assistant/>
 - **API:** `https://wlu-rag-api.nobodyknownothing.workers.dev`
 
 The project started as a Python RAG notebook over four course PDFs. It is now three things:
