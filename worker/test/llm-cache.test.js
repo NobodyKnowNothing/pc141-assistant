@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { DatabaseSync } from "node:sqlite";
 import { beforeEach, test } from "node:test";
 import { answerCache, cacheKey, clearMemory, normalizeQuestion } from "../src/cache.js";
-import { cleanKey, DEFAULT_DAILY_ANSWERS, GROQ_MODEL, groqRequest, WORKERS_AI_MODEL, complete, dailyAnswerBudget, parseAnswer, resetUsage, resetWorkersAiState, skipWorkersAi, usageCounter } from "../src/llm.js";
+import { cleanKey, DEFAULT_DAILY_ANSWERS, GROQ_MODEL, groqRequest, WORKERS_AI_MODEL, workersAiRequest, complete, dailyAnswerBudget, parseAnswer, resetUsage, resetWorkersAiState, skipWorkersAi, usageCounter } from "../src/llm.js";
 
 const ANSWER = { status: "answered", pc141: [], laurier: [], unverified: "" };
 const PROMPT = { system: "sys", user: "question" };
@@ -197,4 +197,16 @@ test("a broken cache database is ignored", async () => {
   assert.deepEqual(await cache.get("k"), { answer: "x" }, "memory tier still works");
   clearMemory();
   assert.equal(await cache.get("k"), null);
+});
+
+test("Gemma 4 on Workers AI gets a named JSON schema with thinking off; Llama gets the bare schema", () => {
+  const gemma = workersAiRequest({}, "sys", "q");
+  assert.equal(WORKERS_AI_MODEL, "@cf/google/gemma-4-26b-a4b-it");
+  assert.equal(gemma.response_format.json_schema.name, "answer");
+  assert.deepEqual(gemma.response_format.json_schema.schema.required, ["status", "pc141", "laurier", "unverified"]);
+  assert.deepEqual(gemma.chat_template_kwargs, { enable_thinking: false });
+  assert.deepEqual(workersAiRequest({ WORKERS_AI_THINKING: "on" }, "sys", "q").chat_template_kwargs, { enable_thinking: true });
+  const llama = workersAiRequest({ WORKERS_AI_MODEL: "@cf/meta/llama-3.3-70b-instruct-fp8-fast" }, "sys", "q");
+  assert.equal(llama.response_format.json_schema.name, undefined);
+  assert.equal(llama.chat_template_kwargs, undefined);
 });

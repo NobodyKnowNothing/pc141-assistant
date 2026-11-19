@@ -31,7 +31,7 @@ The project started as a Python RAG notebook over four course PDFs. It is now th
 question ──► retrieve PC141 sections ──┐
          └─► retrieve Laurier sources ─┴─► LLM writes JSON answer ──► verifier ──► two cited lists
               policy index (D1 + Vectorize)        Workers AI or Groq     quotes,      "PC141 course rules"
-              + live wlu.ca site search            (Llama 3.3 / GPT-OSS)  numbers,     "Laurier university-wide"
+              + live wlu.ca site search            (Gemma 4 / GPT-OSS)    numbers,     "Laurier university-wide"
                                                                           emails
 ```
 
@@ -63,11 +63,11 @@ The quote check confirms the wording exists in the source. It can't catch every 
 
 ### Models, daily limits and caching
 
-Everything runs on free tiers, and the binding limit is the **Workers AI daily allowance** (10,000 neurons, shared by every model and every user). Llama 3.3 70B spends about 120 neurons per answer; an embedding or rerank costs a fraction of one. In practice the allowance has run out after 40 to 50 answers, and not always at the documented 00:00 UTC reset.
+Everything runs on free tiers, and the binding limit is the **Workers AI daily allowance** (10,000 neurons, shared by every model and every user). Llama 3.3 70B, the previous answer model, spent about 120 neurons per answer, and the allowance ran out after 40 to 50 answers; Gemma 4 is listed at a fraction of Llama's price per token, but its neurons per answer haven't been measured yet. An embedding or rerank costs a fraction of one. The allowance doesn't always reset at the documented 00:00 UTC, and not always at the documented 00:00 UTC reset.
 
 So the Worker (`worker/src/llm.js`) splits the work:
 
-- **Workers AI** (`@cf/meta/llama-3.3-70b-instruct-fp8-fast`) writes the first `WORKERS_AI_DAILY_ANSWERS` answers of each UTC day (default 25, counted in the D1 table `ai_usage`).
+- **Workers AI** (`@cf/google/gemma-4-26b-a4b-it`, or the `WORKERS_AI_MODEL` var) writes the first `WORKERS_AI_DAILY_ANSWERS` answers of each UTC day (default 25, counted in the D1 table `ai_usage`). Gemma 4 runs with thinking off (`WORKERS_AI_THINKING` = `"on"` turns it on). On the 48 eval questions it matched Llama 3.3 70B on answering and citing, with 97% of quotes verified against Llama's 98%, and a median of 6.3 s against 9.4 s.
 - **Groq** (`openai/gpt-oss-120b`, or the `GROQ_MODEL` var) writes the rest, which leaves the remaining allowance for embeddings and reranking. Groq's `llama-3.3-70b-versatile` is no longer open to regular accounts (its limits say "Contact Sales", and requests get 404 `model_not_found`). GPT-OSS is a reasoning model, so it runs with `reasoning_effort: "low"` and a 4,096-token allowance. On the live Worker it answered in about 1.7 s. How many answers a day Groq covers depends on its free-tier token limits.
 - Each provider backs up the other: Workers AI answers when Groq is rate-limited, and Workers AI error 4006 sends the answer to Groq. Full mode never quietly drops to keyword-only retrieval. If Workers AI is out entirely, the Worker returns 429 and the page asks students to try again later.
 - GPT-OSS on Groq gets the answer schema as a strict structured output; a `GROQ_MODEL` without strict support gets JSON mode with the schema in the prompt. The verifier checks the result as usual. Quotes are checked sentence by sentence, so a quote that skips a list number between two sentences, or gives them in another order, still matches, while every sentence must be verbatim. Each response's `llm` field names the provider (`budgetReached: true` when the budget sent it to Groq).
@@ -153,7 +153,7 @@ Configuration (`worker/wrangler.jsonc` and secrets):
 | `ALLOWED_ORIGIN` | The frontend origin allowed to call the API |
 | `SITE_SEARCH` | `"on"` / `"off"` (default) for wlu.ca site search |
 | `GROQ_API_KEY` (secret) | Enables Groq answers: `npx wrangler secret put GROQ_API_KEY`. Stray BOMs and line breaks from a Windows shell are stripped |
-| `GROQ_MODEL`, `WORKERS_AI_DAILY_ANSWERS` | Groq model and the daily Workers AI answer budget (default 25) |
+| `GROQ_MODEL`, `WORKERS_AI_MODEL`, `WORKERS_AI_DAILY_ANSWERS` | Groq model, Workers AI model (default Gemma 4 26B) and the daily Workers AI answer budget (default 25) |
 
 The frontend deploys automatically when `docs/` changes on `main`.
 

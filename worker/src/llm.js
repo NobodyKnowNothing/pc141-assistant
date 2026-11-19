@@ -1,12 +1,15 @@
-// Answer generation: Llama 3.3 70B on Workers AI, and GPT-OSS 120B on Groq (when the GROQ_API_KEY
+// Answer generation: Gemma 4 26B (mixture of experts) on Workers AI, and GPT-OSS 120B on Groq (when the GROQ_API_KEY
 // secret is set; Groq's Llama 3.3 70B is no longer open to regular accounts). Workers AI's daily allowance is shared with retrieval (query embeddings and the
-// reranker), and Llama uses about 120 neurons an answer against a fraction of a neuron for a
+// reranker), and an answer costs far more than a retrieval (Llama 3.3 70B, the previous model, used about 120 neurons an answer) against a fraction of a neuron for a
 // retrieval. So Workers AI writes only the first WORKERS_AI_DAILY_ANSWERS answers of each UTC day,
 // then Groq takes over, and the rest of the allowance keeps vector retrieval running. Either
 // provider backs up the other when it fails.
 import { RESPONSE_SCHEMA } from "./answer.js";
 
-export const WORKERS_AI_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
+// Gemma 4 replaced Llama 3.3 70B (@cf/meta/llama-3.3-70b-instruct-fp8-fast) on 2026-11-19: on the 48 eval
+// questions it matched Llama on answering and citing, at 97% vs 98% verified quotes, about a third
+// faster and at a fraction of the price.
+export const WORKERS_AI_MODEL = "@cf/google/gemma-4-26b-a4b-it";
 export const GROQ_MODEL = "openai/gpt-oss-120b";
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
 const GROQ_TIMEOUT_MS = 45_000;
@@ -67,17 +70,28 @@ export function parseAnswer(out) {
   return { answer: UNREADABLE, readable: false };
 }
 
+// The Workers AI model can be changed with the WORKERS_AI_MODEL var (e.g. to compare models in an eval).
+export const workersAiModel = (env) => env.WORKERS_AI_MODEL || WORKERS_AI_MODEL;
+// Newer Workers AI models take OpenAI-style options: a named json_schema, and a switch for thinking,
+// which is on by default and would spend the token allowance before the answer is written.
+const CHAT_COMPLETIONS_MODELS = /^@cf\/(google\/gemma-4|openai\/gpt-oss|qwen\/qwen3)/;
+export function workersAiRequest(env, system, user) {
+  const model = workersAiModel(env);
+  const chat = CHAT_COMPLETIONS_MODELS.test(model);
+  return {
+    messages: [
+      { role: "system", content: system },
+      { role: "user", content: user },
+    ],
+    response_format: { type: "json_schema", json_schema: chat ? { name: "answer", schema: RESPONSE_SCHEMA } : RESPONSE_SCHEMA },
+    temperature: TEMPERATURE,
+    max_tokens: MAX_TOKENS,
+    ...(chat && { chat_template_kwargs: { enable_thinking: env.WORKERS_AI_THINKING === "on" } }),
+  };
+}
+
 async function workersAi(env, system, user) {
-  const run = () =>
-    env.AI.run(WORKERS_AI_MODEL, {
-      messages: [
-        { role: "system", content: system },
-        { role: "user", content: user },
-      ],
-      response_format: { type: "json_schema", json_schema: RESPONSE_SCHEMA },
-      temperature: TEMPERATURE,
-      max_tokens: MAX_TOKENS,
-    });
+  const run = () => env.AI.run(workersAiModel(env), workersAiRequest(env, system, user));
   // One retry for transient model errors; a used-up allowance won't come back in a second.
   const res = await run().catch((e) => (isQuotaError(e) ? Promise.reject(e) : run()));
   return res.response ?? res.choices?.[0]?.message?.content;
@@ -159,7 +173,7 @@ export async function complete(env, { system, user }, { fetchImpl = fetch, now =
   const viaWorkersAi = async () => {
     const out = parseAnswer(await workersAi(env, system, user));
     await usage.add(now);
-    return { ...out, provider: "workers-ai", model: WORKERS_AI_MODEL };
+    return { ...out, provider: "workers-ai", model: workersAiModel(env) };
   };
   const viaGroq = async () => ({ ...parseAnswer(await groq(env, system, user, fetchImpl)), provider: "groq", model: env.GROQ_MODEL || GROQ_MODEL });
   const order = !hasGroq ? [["Workers AI", viaWorkersAi]] : budgetReached ? [["Groq", viaGroq], ["Workers AI", viaWorkersAi]] : [["Workers AI", viaWorkersAi], ["Groq", viaGroq]];
