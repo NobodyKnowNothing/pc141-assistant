@@ -1,5 +1,6 @@
 import chunks from "./chunks.json"; // built by scripts/export_chunks.py
 import vectors from "./vectors.json"; // precomputed by scripts/embed_chunks.py
+import questionVectors from "./question_vectors.json"; // [chunk index, vector] per label question and "about" line
 import { cloudflareAdapter } from "../../policy_index/src/cloudflare-adapter.mjs";
 import { search as searchPolicyIndex } from "../../policy_index/src/search.mjs";
 import { mcpHttp } from "../../policy_index/src/tool.mjs";
@@ -23,6 +24,19 @@ const SCOPES = ["both", "pc141", "laurier"];
 
 const courseIndex = new BM25(chunks.map((c) => c.enriched));
 const hasVectors = vectors.length === chunks.length; // stale vectors.json: fall back to lexical search
+const hasQuestionVectors = hasVectors && questionVectors.length > 0 && questionVectors.every(([i]) => i < chunks.length);
+
+// Vector scores for every chunk, best first. A chunk scores its best match among its own text and
+// its label's questions and "about" line, so a reworded question still lands near one of them.
+// QUESTION_VECTORS: "max" (default) folds them into one list, "list" ranks them as a separate list
+// for fusion, "off" uses the chunk text only (for comparing in an eval).
+function vectorLists(qv, how = "max") {
+  const byText = vectors.map((v) => cosine(qv, v));
+  if (!hasQuestionVectors || how === "off") return [byText];
+  const byQuestion = new Array(chunks.length).fill(-1);
+  for (const [i, v] of questionVectors) byQuestion[i] = Math.max(byQuestion[i], cosine(qv, v));
+  return how === "list" ? [byText, byQuestion] : [byText.map((s, i) => Math.max(s, byQuestion[i]))];
+}
 
 // Section codes that appear in the course documents, e.g. "PC141–L04" -> lab "L04".
 const SECTION_CODES = { lab: new Set(), tutorial: new Set() };
@@ -64,13 +78,19 @@ async function rankCourse(env, query, mode) {
   const lists = [courseIndex.rank(query, TOP_K)];
   if (hasVectors) {
     const qv = (await stage("embed query", env.AI.run(EMBED_MODEL, { text: [query] }))).data[0];
-    lists.push(vectors.map((v, i) => [i, cosine(qv, v)]).sort((a, b) => b[1] - a[1]).slice(0, TOP_K));
+    for (const scores of vectorLists(qv, env.QUESTION_VECTORS)) lists.push(scores.map((s, i) => [i, s]).sort((a, b) => b[1] - a[1]).slice(0, TOP_K));
   }
   const pool = rrf(lists).slice(0, TOP_K);
   // Cross-encoder scores are well ordered but poorly calibrated on these short admin texts (the
   // right section can score 0.003), so keep the top few by rank and let the model skip the rest.
   const scored = await rerank(env, query, pool.map((i) => chunks[i].enriched));
-  return scored.slice(0, PC141_TOP_N).map((r) => ({ ...chunks[pool[r.index]], score: r.score }));
+  if (env.FINAL_RANK === "rerank") return scored.slice(0, PC141_TOP_N).map((r) => ({ ...chunks[pool[r.index]], score: r.score }));
+  // The pool holds every course chunk (63 < TOP_K), so the cross-encoder alone would decide the
+  // order, and one model's quirks with a wording would decide the answer. Fusing its ranking with
+  // the lexical and vector rankings means a section that several of them place high wins.
+  const scoreOf = new Map(scored.map((r) => [pool[r.index], r.score]));
+  const fused = rrf([scored.map((r) => [pool[r.index], r.score]), ...lists]);
+  return fused.slice(0, PC141_TOP_N).map((i) => ({ ...chunks[i], score: scoreOf.get(i) ?? 0 }));
 }
 
 async function retrieve(env, ctx, { question, mode, scope, sections }) {

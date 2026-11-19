@@ -7,13 +7,14 @@ There are two kinds of source:
 
 Rules:
 1. Use only facts stated in the sources. Never add outside knowledge, assumptions or what is typical elsewhere, and do not draw conclusions a source does not state (if a tool is "not approved", do not say it is "not allowed"). If you are not sure a source says something, leave it out.
-2. Write short, self-contained claims that stay close to the source's wording. Each claim lists the numbers of the sources that state it, and "quote" holds the exact words from one of those sources that support it, copied character for character. Copy numbers, dates, times, rooms, percentages and email addresses exactly as written. Be complete: include every relevant rule the sources give, not just the first one you find.
+2. Write short, self-contained claims that stay close to the source's wording. Each claim lists the numbers of the sources that state it, and "quote" holds the exact words from one of those sources that support it, copied character for character. Copy numbers, dates, times, rooms, percentages and email addresses exactly as written. Be complete: include every relevant rule the sources give, not just the first one you find. Put the claims that directly answer the question first and related rules after them, whatever order the sources are numbered in.
 3. Claims from PC141 sources go in "pc141"; claims from LAURIER sources go in "laurier". A claim cites sources of one kind only: if a course rule and a university rule cover the same topic, write two claims. Never present a university rule as a PC141 rule, or the reverse.
 4. Set status to "answered" when the sources answer what the student asked. Use "partial" only when part of the question itself cannot be answered from the sources, and "not_found" when none of it can (then leave both lists empty). Use "unverified" only to name the parts of the question you could not answer; otherwise leave it empty. Do not speculate about other rules that might exist, never guess, and do not write claims that only say something is missing.
 5. If two sources give different answers about the same thing (for example different dates, rooms, or weekly versus alternate weeks), give each version with its citation and say that they conflict. Different rules for different situations are not a conflict. When a guidance page disagrees with a university policy or the Academic Calendar, give the policy or calendar version first.
 6. For schedules, the day, date, time, room and how often sessions run are separate facts: give each one the sources state, even when they come from different sources. If the answer depends on the student's lab or tutorial section and none is given, say so and list the options the sources give.
 7. If a source states a closely related rule (for example the rule for tutorials when the student asks about assignments), include it and say exactly what it applies to. Ignore sources that are not relevant.
-8. Some LAURIER sources apply only to some students: one campus (named in the section, such as "Brantford > ..."), one faculty, or students registered with Accessible Learning (named in the source's publisher). Say who such a rule is for in the claim, and never present it as the rule for every student.
+8. Some PC141 sources begin with "(Index note: ...)". It is written by the search index to say what the section is about, such as that a table of weights is a lab's marking scheme. Use it to understand the section, but it is not part of the source: never quote it, and take every fact from the source text below it. If a source answers the question for one lab, document or component only (one lab's marking scheme, say), say exactly which one it covers instead of presenting it as the rule for the whole course.
+9. Some LAURIER sources apply only to some students: one campus (named in the section, such as "Brantford > ..."), one faculty, or students registered with Accessible Learning (named in the source's publisher). Say who such a rule is for in the claim, and never present it as the rule for every student.
 
 Example of the expected style (invented sources, for format only):
 Sources: [1] PC141 | Announcements > Welcome: "Tutorials are held every Friday in Room B101." [2] PC141 | Announcements > Welcome > Tutorial Schedule: "PC999-T01 January 9 Friday 9:30 am – 10:20 am" [3] PC141 | Syllabus > Schedule: "Tutorials are held every second week."
@@ -47,7 +48,7 @@ export const sourceLabel = (s) =>
 export function buildUserMessage(question, sources, sections) {
   const profile = [sections?.lab && `lab PC141-${sections.lab}`, sections?.tutorial && `tutorial PC141-${sections.tutorial}`].filter(Boolean);
   const blocks = sources.map(
-    (s) => `[${s.n}] ${s.kind === "pc141" ? "PC141" : `LAURIER, ${AUTHORITY[s.authority] || AUTHORITY.guidance}${s.revised ? `, last revised ${s.revised}` : ""}`} | ${sourceLabel(s)}\n${s.intro ? `(Announcement opening: ${s.intro})\n` : ""}${s.text}`
+    (s) => `[${s.n}] ${s.kind === "pc141" ? "PC141" : `LAURIER, ${AUTHORITY[s.authority] || AUTHORITY.guidance}${s.revised ? `, last revised ${s.revised}` : ""}`} | ${sourceLabel(s)}\n${s.label?.about ? `(Index note: ${s.label.about})\n` : ""}${s.intro ? `(Announcement opening: ${s.intro})\n` : ""}${s.text}`
   );
   return [
     profile.length ? `Student's registered sections: ${profile.join(", ")}` : "The student has not said which lab or tutorial section they are in.",
@@ -88,9 +89,10 @@ const squash = (s) => s.toLowerCase().normalize("NFKD").replace(/[^a-z0-9@]+/g, 
 // True when every part of the quote appears word for word in one of the texts. Parts are split at
 // "..." and at sentence ends, so a quote that joins two sentences of a numbered list (dropping the
 // "17." between them) or gives them in another order still counts, while every sentence must
-// still be verbatim.
+// still be verbatim. Line breaks split too, so a quote can pick rows of a table (a lab's weights
+// without the 0% rows between them).
 export function quoteFound(quote, texts) {
-  const parts = String(quote || "").split(/\.\.\.|…|(?<=[.!?;])\s+/).map(squash).filter((p) => p.length >= 8);
+  const parts = String(quote || "").split(/\.\.\.|…|(?<=[.!?;])\s+|\s*\n\s*/).map(squash).filter((p) => p.length >= 8);
   const hay = texts.map(squash);
   return parts.length > 0 && parts.every((p) => hay.some((h) => h.includes(p)));
 }

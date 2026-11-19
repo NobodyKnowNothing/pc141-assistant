@@ -37,7 +37,7 @@ question ──► retrieve PC141 sections ──┐
 
 ### Sources
 
-- **PC141 documents.** `scripts/export_chunks.py` splits the PDFs in `files/` by section into `worker/src/chunks.json` (63 sections). Headings are detected from PDF fonts: whole-line bold text, numbered headings like "3.2 Bounding", and MyLearningSpace posts. Citations read like *PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy, p. 4*. Students can pick their lab and tutorial section (e.g. L04, T02), so answers about times and rooms use their section.
+- **PC141 documents.** `scripts/export_chunks.py` splits the PDFs in `files/` by section into `worker/src/chunks.json` (63 sections). Headings are detected from PDF fonts: whole-line bold text, numbered headings like "3.2 Bounding", and MyLearningSpace posts. Citations read like *PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy, p. 4*. `scripts/label_chunks.py` then gives each section a semantic label (what it is about, questions it answers, everyday synonyms), written once by Gemma 4 and cached in `data/chunk_labels.json`. Retrieval searches the label along with the text, so "marking scheme?" finds the lab manual's bare weight table; the model sees the label only as an index note it may not quote. Students can pick their lab and tutorial section (e.g. L04, T02), so answers about times and rooms use their section.
 - **Laurier policy index.** The 167 governance pages listed in the wlu.ca sitemap, plus 16 hand-picked pages (2026/27 Undergraduate Academic Calendar sections and dates; students.wlu.ca pages on academic integrity, Gen AI, deferred exams, absences, petitions and Accessible Learning). They are split into sections, with long sections split by clause, so a citation can point to *12.2 Student Code of Conduct: Academic Misconduct > 4.04 Penalties for Academic Misconduct, 4.04.01* and link straight to it.
 - **Laurier site search (off by default).** Laurier answers come only from the policy index. With `SITE_SEARCH` set to `"on"`, for anything outside the index, such as transcripts, parking or the OneCard, the Worker queries the endpoint behind wlu.ca's search box and fetches the pages live, caching each for 6 hours. It isn't a published API, so the Worker sends one request per question; it was turned off because it pulled in unrelated pages, such as another course's outline. News posts are skipped. PDF, Word and Qualtrics forms are listed as links when the question asks for a form, but are not quoted.
 
@@ -161,6 +161,7 @@ The frontend deploys automatically when `docs/` changes on `main`.
 
 ```bash
 python scripts/export_chunks.py               # files/*.pdf → worker/src/chunks.json
+python scripts/label_chunks.py                # semantic labels into chunks.json (needs wrangler login)
 python scripts/embed_chunks.py                # worker/src/vectors.json (needs wrangler login)
 node scripts/build_policy_index.mjs           # refresh worker/src/policies.json from the wlu.ca sitemap
 python scripts/eval_web.py --url http://127.0.0.1:8787

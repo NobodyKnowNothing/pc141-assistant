@@ -1,0 +1,1143 @@
+{
+ "20d6477292698dc27e7fb9e753ff0d8cab7ae5e4569d3d07cdf0339c45659c4b": {
+  "about": "This is the header for the PC141 lab manual on Estimation and Bounding, which identifies the document and its authors.",
+  "questions": [
+   "what is this manual called?",
+   "who wrote this lab manual?",
+   "is this the estimation and bounding document?",
+   "can I copy this manual?"
+  ],
+  "terms": [
+   "title page",
+   "authors",
+   "copyright info",
+   "lab manual name",
+   "document identification"
+  ]
+ },
+ "6bf2757ceeeabdbfc61bbaf58592712ef0be6f931b9404ad1b83f94a331d61df": {
+  "about": "This section is the table of contents for the Estimation and Bounding lab manual; it shows where to find different topics and procedures within the document.",
+  "questions": [
+   "where is the stuff about uncertainties?",
+   "how do I find the lab template?",
+   "where can I see the section on significant figures?",
+   "can you help me find the order of magnitude part?",
+   "where is the summary located?"
+  ],
+  "terms": [
+   "index",
+   "navigation",
+   "page numbers",
+   "topics",
+   "guide",
+   "outline",
+   "sections"
+  ]
+ },
+ "58f07808dd75c7ec280243bc43bcb13bdc6b4a82ab77a00b267d2a0e4aaecfba": {
+  "about": "This is the list of figures for the Estimation and Bounding lab manual, which shows where all the diagrams and illustrations are located.",
+  "questions": [
+   "where are the diagrams?",
+   "can you find the pictures in this manual?",
+   "where is the logarithmic scale shown?",
+   "is there an illustration for the order of magnitude?"
+  ],
+  "terms": [
+   "images",
+   "drawings",
+   "charts",
+   "visuals",
+   "graphs",
+   "diagrams",
+   "illustrations"
+  ]
+ },
+ "ba2692a336b3eeb7aa90b9b961c421d5620e1ae70abf4426aa3357ad310d3b16": {
+  "about": "This is the list of tables for this lab manual. It tells students where to find the data tables for the different tasks and uncertainty calculations.",
+  "questions": [
+   "where are the tables?",
+   "where can I find the estimates for task 1?",
+   "where is the uncertainty table?",
+   "where are the task 2 estimates located?"
+  ],
+  "terms": [
+   "data charts",
+   "tables list",
+   "task values",
+   "uncertainty data",
+   "lab results",
+   "summary tables"
+  ]
+ },
+ "e62ee0a22c7ec21fd9dc1ea3ed40f91dd69ab8ce5c7db206366be7c5eb765c1b": {
+  "about": "the goal of this lab: what you will be learning and why it matters for this specific experiment.",
+  "questions": [
+   "what is this lab about?",
+   "why are we doing this experiment?",
+   "what skills am i going to learn?",
+   "how does this relate to uncertainty?",
+   "what is the point of estimation and bounding?"
+  ],
+  "terms": [
+   "learning objectives",
+   "goals",
+   "aims",
+   "scientific approach",
+   "reasoning",
+   "basics",
+   "fundamentals"
+  ]
+ },
+ "1e23e9e54eeee7daf3f5b926435acd50f9233ee07ec2ab7ceb7fd8814bf1007f": {
+  "about": "This is the introduction to the Estimation and Bounding lab manual, explaining why scientists use rough guesses and approximations before doing precise measurements.",
+  "questions": [
+   "why do we do estimation?",
+   "what is a sanity check?",
+   "how do estimates help with mistakes?",
+   "why can't we just use precise measurements right away?"
+  ],
+  "terms": [
+   "rough guesses",
+   "approximations",
+   "predicting results",
+   "checking for errors",
+   "intuition",
+   "scientific method"
+  ]
+ },
+ "ed3c853eb783f5f1a469fd1d5fc181a85112f23e960795189132abf9513a213b": {
+  "about": "This section of the lab manual explains the concept of estimation and how to use reasoned approximations to guide your experimental work.",
+  "questions": [
+   "what is an estimate?",
+   "why do i need to estimate things in lab?",
+   "how accurate does my estimate need to be?",
+   "how can estimation help me avoid mistakes?",
+   "what counts as a reasonable estimate?"
+  ],
+  "terms": [
+   "approximations",
+   "rough guesses",
+   "ballpark figures",
+   "checking results",
+   "reasoned guesses",
+   "accuracy",
+   "error detection"
+  ]
+ },
+ "641b4e6742397524b777b5a2b166315c296681f648d404d91cac895b275bed01": {
+  "about": "This section of the lab manual explains the concept of bounding, which is how to find the maximum and minimum possible values for a quantity.",
+  "questions": [
+   "what is bounding?",
+   "how do i find the upper and lower limits of a value?",
+   "what does it mean to bracket a number?",
+   "how can i find the range for an unknown value?"
+  ],
+  "terms": [
+   "limits",
+   "maximum",
+   "minimum",
+   "range",
+   "extremes",
+   "bracketing",
+   "thresholds"
+  ]
+ },
+ "6f5a6459fa5b589b7858c935126ad79bb2a6361fbf2ebbef4b627e87b699319b": {
+  "about": "This section of the lab manual explains how to choose sensible upper and lower limits for an estimate by comparing unknown items to things you already know.",
+  "questions": [
+   "how do I pick bounds for my estimate?",
+   "how can I find a reasonable upper or lower limit?",
+   "what's the best way to set bounds?",
+   "how do I make my estimate more accurate?",
+   "should my bounds be wide or narrow?"
+  ],
+  "terms": [
+   "limits",
+   "comparison",
+   "accuracy",
+   "scale",
+   "reference points",
+   "estimation tips"
+  ]
+ },
+ "98a5a3242522f4531a21e47ee53c12bd779cd41e016aae3899960fd6021da6a1": {
+  "about": "This section of the lab manual explains how to calculate the range of possible values by finding the difference between upper and lower bounds, which helps determine the usefulness of an estimate.",
+  "questions": [
+   "how do I find the range of values?",
+   "how do I calculate the difference between bounds?",
+   "how can I tell if my estimate is good?",
+   "what is the relationship between range and uncertainty?"
+  ],
+  "terms": [
+   "spread",
+   "gap",
+   "margin of error",
+   "precision",
+   "accuracy",
+   "interval",
+   "calculation"
+  ]
+ },
+ "8e5a76de3fc43328493183a553033a75cae47904a4cb0d3e04164147dd85067e": {
+  "about": "This section of the lab manual explains how to use comparison to estimate unknown values by using known reference points. It describes how to use upper and lower bounds to find a reasonable estimate.",
+  "questions": [
+   "how do i estimate something unknown?",
+   "how can i use things i already know to make a guess?",
+   "what is the best way to find an estimate?",
+   "how do bounds help with estimation?"
+  ],
+  "terms": [
+   "guessing",
+   "reference points",
+   "approximating",
+   "bracketing",
+   "known values",
+   "scale",
+   "accuracy"
+  ]
+ },
+ "03cfa28e738d7f025dd75f46db34fc1d1f9ce9225baed5385aef2d1bd81d57be": {
+  "about": "this section provides an example of how to use familiar comparisons to make estimates for this lab; it explains how to set upper and lower bounds to find a useful range of values.",
+  "questions": [
+   "how do I make an estimate?",
+   "what are bounds?",
+   "how do I pick a range of values?",
+   "how can I make my estimate more useful?",
+   "how do I use comparisons to guess a size or weight?"
+  ],
+  "terms": [
+   "approximation",
+   "upper limit",
+   "lower limit",
+   "narrowing the range",
+   "intuition",
+   "measurement range",
+   "guessing technique"
+  ]
+ },
+ "c820201dbfffe62d905d7fc02359f211d6f542d1baf6f854a9916603fecf85f9": {
+  "about": "This section of the lab manual explains how to handle estimates and bounds when you cannot find a familiar object to compare a quantity to. It provides instructions for a lab task involving estimating the dimensions of Conrad Hall and the mass of a lab table.",
+  "questions": [
+   "what do I do if I can't find something to compare my estimate to?",
+   "how do I pick bounds for things that aren't everyday objects?",
+   "how do I complete the table for Conrad Hall and the lab table?",
+   "why are my estimates less precise for unfamiliar things?",
+   "how should I explain my reasoning for my bounds?"
+  ],
+  "terms": [
+   "unfamiliar objects",
+   "rough guesses",
+   "approximation",
+   "measurement range",
+   "reference points",
+   "scale",
+   "estimation process"
+  ]
+ },
+ "0fc6ff39015f8ea665391c83695e231013c5365302c5307cf3387d065c993c85": {
+  "about": "This section of the lab manual explains how to perform order of magnitude calculations to check if experimental results are reasonable. It covers how to use powers of ten to estimate values and how these quick checks help catch errors.",
+  "questions": [
+   "how do I do an order of magnitude calculation?",
+   "what is a sanity check in a lab?",
+   "how can I tell if my answer is way off?",
+   "why do I need to estimate before measuring?",
+   "how do powers of ten work for estimates?"
+  ],
+  "terms": [
+   "powers of ten",
+   "sanity check",
+   "scientific reasoning",
+   "error detection",
+   "logarithmic scale",
+   "factor of ten",
+   "estimation",
+   "approximate values"
+  ]
+ },
+ "7f8c98c72b5ee09c17df0a36fef38d55bc4ec41a770a5f1ecf5dd64b1b4d2bef": {
+  "about": "this is an example of an order of magnitude calculation in the lab manual: how to use limited data to make a reasonable scientific estimate.",
+  "questions": [
+   "how do I do an order of magnitude calculation?",
+   "can you show me an example of estimation?",
+   "how do I make a reasonable guess in science?",
+   "how do I check if my estimate makes sense?"
+  ],
+  "terms": [
+   "rough guess",
+   "ballpark figure",
+   "approximation",
+   "back-of-the-envelope",
+   "reasoning",
+   "scaling",
+   "logic check"
+  ]
+ },
+ "6dc0932fd67600ba2d9e1affd7dfd739bdf68d178cd32c6d8fd229cd51128e5e": {
+  "about": "this section of the lab manual explains how to do order of magnitude calculations and what they are used for.",
+  "questions": [
+   "what is an order of magnitude?",
+   "how do i do an OM calculation?",
+   "do i need an exact answer for these labs?",
+   "how do i check if my estimate is in the right ballpark?",
+   "what does power of ten mean in this context?"
+  ],
+  "terms": [
+   "approximations",
+   "rough estimates",
+   "scale",
+   "scientific notation",
+   "powers of ten",
+   "ballpark figures",
+   "reasonableness check"
+  ]
+ },
+ "ca1a1d3a4a377d34d48ab7bfb566a8fcf17f467b976d3278f9badff4058f54c7": {
+  "about": "This section of the lab manual explains when and why you should use order of magnitude calculations in science and engineering.",
+  "questions": [
+   "when do I use order of magnitude?",
+   "why do we do these calculations?",
+   "how can I tell if my results are wrong?",
+   "what counts as an order of magnitude calculation?",
+   "can these estimates help me find mistakes?"
+  ],
+  "terms": [
+   "scientific reasoning",
+   "estimating",
+   "checking results",
+   "finding errors",
+   "data analysis",
+   "approximate values",
+   "sanity check",
+   "experimental process"
+  ]
+ },
+ "626179640c6aa142ea9bb6f8bd2336dd13300a088f4757f305e50241e903f775": {
+  "about": "This section of the lab manual explains how to use logarithmic scales to visualize and compare orders of magnitude for estimates.",
+  "questions": [
+   "how do logarithmic scales work?",
+   "what is a cycle in a log scale?",
+   "how can I compare my estimates using a graph?",
+   "how do I know if my estimate is the right order of magnitude?",
+   "do I need to be good at math to use log scales?"
+  ],
+  "terms": [
+   "log plots",
+   "powers of ten",
+   "relative scale",
+   "visualizing data",
+   "intervals",
+   "graphing estimates"
+  ]
+ },
+ "1f240b22f24dd46e97bfc6889e35150580c3975ef0921a71166c090c47c604ec": {
+  "about": "This section of the lab manual explains how to use and interpret a logarithmic scale, including how to label data points and cycles on a graph.",
+  "questions": [
+   "how do I use a log scale?",
+   "what is a cycle on a graph?",
+   "how should I answer questions about my data?",
+   "how do I label my figures?",
+   "how much explanation do I need to write?"
+  ],
+  "terms": [
+   "graphing",
+   "data interpretation",
+   "plotting",
+   "scientific scales",
+   "answering style",
+   "visualizing data"
+  ]
+ },
+ "7ae190ab91f22961040d4c8e8b4f0189f8b048fb30b258e121963a289b855ea4": {
+  "about": "This section of the lab manual explains how to calculate and report uncertainties for measured or estimated values. It covers how to turn upper and lower bounds into a single value with a plus-minus range.",
+  "questions": [
+   "how do I report my measurements?",
+   "how do I calculate uncertainty from bounds?",
+   "what is the difference between error and uncertainty?",
+   "how do I write my answer using the plus-minus sign?",
+   "what if my estimate isn't in the middle of my bounds?"
+  ],
+  "terms": [
+   "plus-minus",
+   "margin of error",
+   "midpoint",
+   "symmetric interval",
+   "measurement range",
+   "precision",
+   "delta",
+   "confidence"
+  ]
+ },
+ "7c64b9f8323d09fff41ee31e7a74e7bae81c0386e30ec6d45a560b7870ccd664": {
+  "about": "this section provides a summary of the key concepts and definitions covered in this lab manual: what the main terms and ideas mean.",
+  "questions": [
+   "what do these terms mean?",
+   "can you explain uncertainty?",
+   "what is an order of magnitude?",
+   "what does agreement mean in this context?",
+   "how do I define a bound?"
+  ],
+  "terms": [
+   "definitions",
+   "glossary",
+   "key concepts",
+   "vocabulary",
+   "basics",
+   "summary of terms"
+  ]
+ },
+ "f67aeef24498a357d38a552f3afea9116e0d19bca83ff112b741fc9895cee7d9": {
+  "about": "the marking scheme for this lab: how much each part of the lab is worth",
+  "questions": [
+   "how is this lab graded?",
+   "what is the marking scheme?",
+   "how many points are in-lab questions worth?",
+   "how much are the tasks worth?",
+   "what's the breakdown for marks?"
+  ],
+  "terms": [
+   "grading",
+   "points",
+   "weighting",
+   "evaluation",
+   "score",
+   "rubric",
+   "percentage"
+  ]
+ },
+ "bf2820641cf55ec4e4051b3240f5a270137f990b44dd62cc7fb3992d4472bfa6": {
+  "about": "this is the template for the Estimation and Bounding lab report: it shows how to format your name, partner, and the tables for recording your estimates and uncertainties.",
+  "questions": [
+   "how should I set up my lab report?",
+   "what tables do I need to fill out?",
+   "where do I put my name and my partner's name?",
+   "how do I record my estimates and bounds?",
+   "what does my lab report look like?"
+  ],
+  "terms": [
+   "report layout",
+   "data tables",
+   "lab write-up",
+   "formatting",
+   "recording results",
+   "information to include"
+  ]
+ },
+ "3519fc6223805c592a46ace190917d20201ad759011b253c64c46c5c698cf142": {
+  "about": "the rules for significant figures in this lab manual: how to count digits and how to round your answers when doing math.",
+  "questions": [
+   "how do i round my answers?",
+   "how many sig figs should i use?",
+   "how do i do math with sig figs?",
+   "how do i deal with zeros in my measurements?",
+   "how do i report my results correctly?"
+  ],
+  "terms": [
+   "precision",
+   "rounding",
+   "decimal places",
+   "math rules",
+   "calculating",
+   "measurement accuracy",
+   "digits",
+   "scientific notation"
+  ]
+ },
+ "d6b04c8765cb802659d1828d62dcdbe76cc742f9dec0d7650fe847ddd32ce6e0": {
+  "about": "This section of the lab manual explains how to use scientific notation and provides rules for writing numbers in standard form.",
+  "questions": [
+   "how do I write numbers in scientific notation?",
+   "how can I show significant figures correctly?",
+   "how do I avoid mistakes with powers of ten?",
+   "what is the standard way to write very large or small numbers?"
+  ],
+  "terms": [
+   "powers of ten",
+   "math notation",
+   "decimal places",
+   "standard form",
+   "scientific format",
+   "calculating with large numbers"
+  ]
+ },
+ "12d209531b7b65f0ec7b66ef702207002097d2d8820f2da42fc7459eb653bcf8": {
+  "about": "a checklist for this lab to help students review their work before turning it in",
+  "questions": [
+   "did I do everything right before submitting?",
+   "what do I need to check before I hand in my lab?",
+   "how should I report my results?",
+   "did I include my uncertainties correctly?",
+   "should I include an OOM check?"
+  ],
+  "terms": [
+   "final review",
+   "submission requirements",
+   "grading criteria",
+   "double check",
+   "lab report prep",
+   "accuracy check"
+  ]
+ },
+ "b310395b0f0d8a28808731c8a64bc6a77c8f8dfebe8eb1733d812def3b936969": {
+  "about": "This section introduces the post-lab question for the first lab session.",
+  "questions": [
+   "what is the post lab question for lab 1?",
+   "is there a PQ for the first lab?",
+   "what do I have to do after lab 1?"
+  ],
+  "terms": [
+   "homework",
+   "assignment",
+   "follow-up task",
+   "after lab work",
+   "lab questions"
+  ]
+ },
+ "c41f383f66da3a63edcdd4002c551794cab4affc3390f46767d6bcfcda51a24a": {
+  "about": "This section provides the details for the first post-lab assignment, including a specific estimation problem about a swimming pool and the deadline for submission.",
+  "questions": [
+   "what is the post lab 1 question?",
+   "when is the post lab due?",
+   "how do I turn in my post lab?",
+   "where do I upload my work?",
+   "what is the swimming pool problem about?"
+  ],
+  "terms": [
+   "homework",
+   "assignment",
+   "deadline",
+   "due date",
+   "submission instructions",
+   "uploading",
+   "math problem",
+   "estimation task"
+  ]
+ },
+ "53e67c056904162843214a8f479286207d95327dbfafead8b251f2a91f22d569": {
+  "about": "the penalty for turning in post lab 1 work after the deadline: how much marks you lose for being late.",
+  "questions": [
+   "what happens if my lab is late?",
+   "how much marks do I lose if I miss the deadline by a day?",
+   "is there a penalty for late work?",
+   "how much is deducted for late submissions?",
+   "what is the late policy for post lab 1?"
+  ],
+  "terms": [
+   "penalties",
+   "late policy",
+   "mark reduction",
+   "overdue",
+   "lost points",
+   "late assignment"
+  ]
+ },
+ "c7d94a1bbc4a1854aa32fa4ed1e64f206dc02a14ec9ddd1bc7bd02f0e7ee6e84": {
+  "about": "This section tells you where to find the lab syllabus and how to change file formats. It applies to the PC141 lab course.",
+  "questions": [
+   "where is the lab syllabus?",
+   "how do I get the syllabus?",
+   "can I convert doc files to pdf?",
+   "how to change file types?"
+  ],
+  "terms": [
+   "download link",
+   "file conversion",
+   "document formats",
+   "PDF maker",
+   "accessing files"
+  ]
+ },
+ "f8347ce066b0a54c573c34a152741758f92c3399caa6c69936dfb307a658406f": {
+  "about": "This section provides the contact information for the Lab Instructor Assistants (IA) for Lab 1. It tells students who they can reach out to for help with this lab.",
+  "questions": [
+   "who are the IAs?",
+   "how do I contact a lab instructor assistant?",
+   "who can help me with my lab?",
+   "what are the IA emails?"
+  ],
+  "terms": [
+   "help",
+   "support",
+   "email addresses",
+   "contact details",
+   "teaching assistants",
+   "staff"
+  ]
+ },
+ "212bbdf3d73fe1ae3c978bde70dd970e3b0f8310fc9fb33290c1db6d789443a4": {
+  "about": "This is the introductory section for the first lab, providing a welcome message and the location where lab sessions are held.",
+  "questions": [
+   "where is the lab?",
+   "which room is the lab in?",
+   "where do I go for my lab session?",
+   "how often are labs held?"
+  ],
+  "terms": [
+   "classroom",
+   "building",
+   "meeting place",
+   "frequency",
+   "location",
+   "room number"
+  ]
+ },
+ "cb842561d75011355a858c6e4372a3301f8b96ca9344b721921a3dadf497e94b": {
+  "about": "the lab schedule for the first week of the term: when each specific lab section meets.",
+  "questions": [
+   "when is my lab?",
+   "what time is lab 04?",
+   "what day is my lab section?",
+   "when do labs start in september?",
+   "when are the tuesday labs?"
+  ],
+  "terms": [
+   "timetable",
+   "session times",
+   "weekly calendar",
+   "lab slots",
+   "meeting times",
+   "class schedule"
+  ]
+ },
+ "44560a84fb2406561dc464eefe2b4d9efbe44b820421ec6901e1001e82631a87": {
+  "about": "This section introduces the first lab session for PC141 and outlines the specific exercise being covered. It explains what the initial lab session will involve.",
+  "questions": [
+   "what happens in the first lab?",
+   "what is the first lab about?",
+   "what exercise are we doing in lab 1?",
+   "what will we learn in the first session?"
+  ],
+  "terms": [
+   "introductory session",
+   "first meeting",
+   "lab content",
+   "course basics",
+   "experimental skills",
+   "initial exercise"
+  ]
+ },
+ "1169e75371795a8dc4cccc96b868667525ffc9420b4405e9c81fedf20e1d32f6": {
+  "about": "This section explains what students need to do to get ready for their first lab session, including what to read and what to download.",
+  "questions": [
+   "how do I prepare for lab 1?",
+   "what should I read before the first lab?",
+   "what do I need to download for lab?",
+   "what do I need to do before my first lab session?"
+  ],
+  "terms": [
+   "pre-lab tasks",
+   "getting ready",
+   "required reading",
+   "study materials",
+   "setup",
+   "homework"
+  ]
+ },
+ "3bc7813a700fa50d377dfba41282904203f6ee28e9312366a95a8ea890b9e2bf": {
+  "about": "what students need to have with them for the first lab session: a list of required materials and what to include in a lab notebook.",
+  "questions": [
+   "what do i need for lab 1?",
+   "do i need a calculator?",
+   "what should i write in my lab notebook?",
+   "do i need a paper copy of the textbook?",
+   "what goes in my physics notebook?"
+  ],
+  "terms": [
+   "supplies",
+   "equipment",
+   "essentials",
+   "notebook contents",
+   "required items",
+   "scientific logging"
+  ]
+ },
+ "89536767502c35147b6867b0908d2c9ff64a57a6302bd896b1632528a828f14f": {
+  "about": "the contact details for the lab instructor and how to email them for help with this lab.",
+  "questions": [
+   "how do I email my instructor?",
+   "who do I contact if I have questions?",
+   "what should I put in my email subject line?",
+   "can I use my personal email to contact the lab?",
+   "how can I make sure the instructor replies to me?"
+  ],
+  "terms": [
+   "reaching out",
+   "getting help",
+   "email etiquette",
+   "how to message",
+   "instructor details",
+   "subject line requirements"
+  ]
+ },
+ "911a630695c462ea05eba7975bbe4241ebeeb8ffaaa3a6b1d0836955d8884c2c": {
+  "about": "This is the header for the PC141 lab syllabus, which provides the course name, the term, the location of the labs, and contact information for the instructor.",
+  "questions": [
+   "where are the labs held?",
+   "who is my lab instructor?",
+   "how do I email my professor?",
+   "where can I find course materials online?",
+   "what building is the lab in?"
+  ],
+  "terms": [
+   "location",
+   "contact info",
+   "room number",
+   "professor",
+   "course details",
+   "online portal"
+  ]
+ },
+ "c7d3ac9b75bf458ce3bcfb6e5e40e77e02c269239f1e388092c49318bc0fc9d9": {
+  "about": "this is a general overview of the lab component for the PC141 course; it explains what the labs are about and what skills students will learn.",
+  "questions": [
+   "what is the lab about?",
+   "what will i learn in the labs?",
+   "what kind of stuff do we do in the lab component?",
+   "what skills am i going to get from this course?"
+  ],
+  "terms": [
+   "physics experiments",
+   "hands-on learning",
+   "mechanics topics",
+   "scientific methods",
+   "data processing",
+   "lab work"
+  ]
+ },
+ "4a5224c8dc4ab49dd3f2057c215adc1eec945ff150e1b273935de722358c0136": {
+  "about": "the learning goals for the lab course: what you will learn how to do by the end of the term.",
+  "questions": [
+   "what am i going to learn in lab?",
+   "what skills will i gain?",
+   "do i learn how to use lab equipment?",
+   "will we learn about error and uncertainty?",
+   "is there group work in these labs?"
+  ],
+  "terms": [
+   "skills",
+   "objectives",
+   "competencies",
+   "experimental techniques",
+   "data analysis",
+   "teamwork",
+   "measurement accuracy"
+  ]
+ },
+ "2479dd3e81985416b55e03840343e5c58c07da23feb5b3981267386d5465f441": {
+  "about": "This section explains how the lab sessions are structured and what students need to do to prepare and participate. It applies to the PC141 lab sessions.",
+  "questions": [
+   "how many people are in a lab group?",
+   "what do i need to bring to lab?",
+   "do i have to do work before class?",
+   "where do i turn in my assignments?",
+   "what happens during the lab session?"
+  ],
+  "terms": [
+   "team size",
+   "supplies",
+   "equipment",
+   "pre-class prep",
+   "handing in work",
+   "group work",
+   "class procedure"
+  ]
+ },
+ "6c8e099dedfdd9aa90632fc97e640a1f11c21298a074c46cbeae1626277bd66c": {
+  "about": "the lab and tutorial timetable: when classes start and how often they happen.",
+  "questions": [
+   "when do labs start?",
+   "how often are labs held?",
+   "what happens if i'm late to lab?",
+   "do i have to show up every week?"
+  ],
+  "terms": [
+   "dates",
+   "timing",
+   "start date",
+   "frequency",
+   "being late",
+   "tardiness",
+   "weekly schedule"
+  ]
+ },
+ "905fa7060eb376e89a565839182f16b5847a36d8ae2e53384ab4451fde8c20aa": {
+  "about": "this section is a list of the different lab experiments you will do this term; it shows the topics covered in each lab session.",
+  "questions": [
+   "what labs are we doing?",
+   "what is the first lab about?",
+   "what topics will we cover in the experiments?",
+   "is there a lab on friction?",
+   "what are the lab titles?"
+  ],
+  "terms": [
+   "experiments",
+   "topics",
+   "weekly tasks",
+   "course content",
+   "practical work",
+   "units"
+  ]
+ },
+ "450262aee2c4bd8579faf94b887bad8be502e4d3747a52b7e82deb7cbbe4a6d4": {
+  "about": "the attendance and makeup policy for the PC141 labs: what happens if you miss a lab and how to get a makeup session.",
+  "questions": [
+   "what if i miss a lab?",
+   "can i get a makeup lab?",
+   "what counts as a valid excuse for missing class?",
+   "do i need a doctor's note?",
+   "what happens if i just don't show up?",
+   "how do I tell my instructor I'm sick?"
+  ],
+  "terms": [
+   "missing class",
+   "excused absence",
+   "medical note",
+   "doctor's excuse",
+   "skipping lab",
+   "making up work",
+   "absence proof",
+   "missed session"
+  ]
+ },
+ "a94083f86e08464085a4836e3692be21991ad4699551839770042958f76aa237": {
+  "about": "the policy for checking and disputing your marks in the lab and tutorials; how to ask about a grade if you think there is a mistake.",
+  "questions": [
+   "how do I check my grades?",
+   "what if my mark is wrong?",
+   "who do I talk to about a grading error?",
+   "how long do I have to dispute a grade?",
+   "can I ask for a grade change after the term ends?"
+  ],
+  "terms": [
+   "disputing marks",
+   "grading errors",
+   "appealing a grade",
+   "contacting staff",
+   "deadline for questions",
+   "finalized scores"
+  ]
+ },
+ "4437b991d74691ebc92d0ef2b8c830a881ca0f439b941ae611f89438668c4c2f": {
+  "about": "This section explains the rules for working in the lab, specifically regarding whether students can work together or must work alone.",
+  "questions": [
+   "Can I work with my friends in lab?",
+   "Do I have to do the lab by myself?",
+   "Can we share data in our groups?",
+   "Am I allowed to collaborate on lab work?"
+  ],
+  "terms": [
+   "group work",
+   "collaboration",
+   "teamwork",
+   "working together",
+   "individual effort",
+   "partnering up"
+  ]
+ },
+ "5e69ba9545d3ab4e594c3cbbc194a230f6012bb6ae8a7077883c3e2203f74abf": {
+  "about": "the plagiarism policy for the lab: what counts as cheating and what happens if you get caught.",
+  "questions": [
+   "can i copy my lab partner's work?",
+   "what happens if i cheat on a report?",
+   "can we share data in our groups?",
+   "how do i avoid academic dishonesty?",
+   "will i get a zero if i copy a calculation?"
+  ],
+  "terms": [
+   "cheating",
+   "academic integrity",
+   "copying",
+   "penalties",
+   "original work",
+   "reporting misconduct"
+  ]
+ },
+ "9f47b1173af6e652f2175ec2819e1978a2aaee51329d528b20593d8e58fe73c1": {
+  "about": "the rules for using electronics and what you need to bring to lab: this explains the policy on digital devices and the required materials for each session.",
+  "questions": [
+   "can I use my phone in lab?",
+   "what do I need to bring to my lab session?",
+   "can I use a laptop or tablet?",
+   "what happens if I forget my lab manual?",
+   "am I allowed to wear a smart watch?"
+  ],
+  "terms": [
+   "electronics",
+   "gadgets",
+   "supplies",
+   "equipment",
+   "penalties",
+   "mandatory items",
+   "tech policy"
+  ]
+ },
+ "77c8ac64725c9446591bf598d628d4949aae74dbaf91c16568fc3d742c934f6e": {
+  "about": "This is the introductory section of the PC141 Tutorial Announcements document. It serves as the opening of the document and does not contain specific course information.",
+  "questions": [
+   "what is this document?",
+   "where do I start reading?",
+   "is there an intro?"
+  ],
+  "terms": [
+   "start",
+   "beginning",
+   "opening",
+   "overview",
+   "preface"
+  ]
+ },
+ "56a48a6e042b8ad4a37933d734940ec6e6751f19c14677a78ba3b9ed688b64f4": {
+  "about": "This section explains what the tutorial component of the course is and what students can expect to do during these weekly sessions.",
+  "questions": [
+   "what are tutorials for?",
+   "what happens in a tutorial?",
+   "how do tutorials help me?",
+   "do we just review stuff in tutorials?"
+  ],
+  "terms": [
+   "weekly meetings",
+   "learning style",
+   "problem-solving sessions",
+   "physics practice",
+   "hands-on learning",
+   "skill building"
+  ]
+ },
+ "8d6728f318d00bc2c71db3fbd68d8479c0fa9ca2635727eaaf53ada5b3091227": {
+  "about": "the tutorial schedule for the first week of class: when the first tutorial sessions take place.",
+  "questions": [
+   "when is my first tutorial?",
+   "what time is the first tutorial session?",
+   "when do tutorials start?",
+   "when is the first class for PC141 tutorials?"
+  ],
+  "terms": [
+   "timetable",
+   "dates",
+   "weekly schedule",
+   "meeting times",
+   "first session",
+   "start dates"
+  ]
+ },
+ "463a175cfa2150f1520789a1c6b0907c5c04ce277259cc0615c0e0e1014311fb": {
+  "about": "the list of things you need to bring to every tutorial session",
+  "questions": [
+   "what do i need for tutorial?",
+   "do i need a calculator?",
+   "what should i bring to class?",
+   "can i just use my lecture notes?",
+   "do i need a notebook?"
+  ],
+  "terms": [
+   "supplies",
+   "equipment",
+   "stuff to bring",
+   "required items",
+   "calculator",
+   "notebook",
+   "textbook",
+   "notes"
+  ]
+ },
+ "fa066efc7f4afa6e69751ed7af4a6f56620e385bae9114c5c3306726f5ddd7cc": {
+  "about": "the rules for using electronics in tutorials: what devices are banned and why.",
+  "questions": [
+   "can I use my phone in tutorial?",
+   "are laptops allowed?",
+   "can I use my tablet for notes?",
+   "can I use AI during the session?",
+   "do I have to turn off my phone?"
+  ],
+  "terms": [
+   "electronics",
+   "gadgets",
+   "smartphones",
+   "computers",
+   "tech",
+   "devices",
+   "cell phones"
+  ]
+ },
+ "27657e5e3c12f3fb8226152f9d0347071b6e084c8d7a990eeb657b2aa477a341": {
+  "about": "how to contact your instructor for the PC141 tutorials and the correct way to send emails.",
+  "questions": [
+   "how do I email my tutor?",
+   "can I message you on MyLearningSpace?",
+   "what should I put in the subject line of my email?",
+   "how can I get in touch with you?",
+   "will you reply if I don't include my section number?"
+  ],
+  "terms": [
+   "contact info",
+   "email etiquette",
+   "reaching out",
+   "messaging",
+   "subject line format",
+   "getting help"
+  ]
+ },
+ "38fa22cddb8952acb36a3d99ab410c43dab07393909640a293bca77ef2405e65": {
+  "about": "This section explains the general rules and expectations for the tutorial component of the course, noting that they mostly follow the same guidelines as the labs.",
+  "questions": [
+   "what are the tutorial rules?",
+   "how do tutorials work compared to labs?",
+   "what are the expectations for tutorials?",
+   "are the lab and tutorial policies the same?"
+  ],
+  "terms": [
+   "course guidelines",
+   "conduct",
+   "standard procedures",
+   "instructional rules",
+   "requirements",
+   "academic standards"
+  ]
+ },
+ "8d53f0d789af1117a83ab6d7cd49156423165ba1078074be0168865d5cc29166": {
+  "about": "the office hours for this tutorial course: when and where you can meet with instructors for help.",
+  "questions": [
+   "when are office hours?",
+   "where can I find my instructor?",
+   "can I drop by for help?",
+   "what time is help available?",
+   "where is the office located?"
+  ],
+  "terms": [
+   "meeting times",
+   "location",
+   "help sessions",
+   "instructor availability",
+   "drop-in hours",
+   "room number"
+  ]
+ },
+ "93cb4fdc3dac12108ccee44fb7b87c2c0230408285e09715de141b9b95cf072f": {
+  "about": "This section describes how the weekly tutorial sessions are structured and what students can expect during the class time for this course.",
+  "questions": [
+   "how do tutorials work?",
+   "what happens in a tutorial?",
+   "what is the tutorial format?",
+   "are tutorials just lectures?"
+  ],
+  "terms": [
+   "class structure",
+   "session style",
+   "weekly meetings",
+   "learning activities",
+   "how class is run"
+  ]
+ },
+ "32e3e6d506a158c9864a84d8a2268b06b87aa4cb03afb8a3fcd0fb0d06861f67": {
+  "about": "This section explains the rules for the written reports you complete during tutorials, specifically that they must be your own individual work.",
+  "questions": [
+   "do I have to write a report in tutorial?",
+   "can I copy someone else's tutorial work?",
+   "is the tutorial report done in class?",
+   "do I need to do the tutorial work by myself?"
+  ],
+  "terms": [
+   "individual work",
+   "in-class assignment",
+   "independent effort",
+   "written task",
+   "solo work"
+  ]
+ },
+ "89860203424a5ded4399d95a347efcc378f400130e02cf343183f7e50e6d60d3": {
+  "about": "what students can use during tutorials: a list of allowed materials and the consequences of using unauthorized tools.",
+  "questions": [
+   "can I use my phone in tutorial?",
+   "what am I allowed to bring to the tutorial?",
+   "can I use a calculator?",
+   "am I allowed to use AI or the internet?",
+   "can I use my lecture notes?"
+  ],
+  "terms": [
+   "cheat sheet",
+   "permitted items",
+   "study aids",
+   "unauthorized materials",
+   "calculator policy",
+   "academic misconduct"
+  ]
+ },
+ "cdb243f42647b368b9fe86dddf72a572174388856b799be8b95a06df88bab383": {
+  "about": "This section explains the kind of help students can get from Instructional Assistants during tutorials. It describes what the IAs can and cannot do to assist with learning.",
+  "questions": [
+   "can the IAs help me in tutorial?",
+   "will the assistants give me the answers?",
+   "can I ask questions during the tutorial?",
+   "what do the IAs actually do?",
+   "will they help me understand the concepts?"
+  ],
+  "terms": [
+   "tutors",
+   "teaching assistants",
+   "help with homework",
+   "getting guidance",
+   "clarifying things",
+   "extra help",
+   "TA support"
+  ]
+ },
+ "7e4ee1c5c1ea06f3453631fe3b1db5567cfd121d0e32d38803007e17e3ee7a74": {
+  "about": "the preparation expectations for tutorials: what students should do each week to get ready for their tutorial sessions.",
+  "questions": [
+   "how should I prepare for tutorials?",
+   "what do I need to do before my tutorial?",
+   "how can I do well in tutorials?",
+   "what is the weekly study routine for tutorials?",
+   "should I look at my old mistakes before tutorials?"
+  ],
+  "terms": [
+   "study routine",
+   "weekly tasks",
+   "getting ready",
+   "pre-tutorial work",
+   "learning steps",
+   "reviewing notes"
+  ]
+ },
+ "5f79bf22ef3f43f945369da6bfeac49576494a80f05fc23f0dd41bc3bcc973ce": {
+  "about": "the rules for attending tutorials and how your grades are calculated and managed for this course.",
+  "questions": [
+   "do i have to go to every tutorial?",
+   "what if i'm sick and miss a class?",
+   "how do i get a make-up session?",
+   "where can i see my tutorial grades?",
+   "what if i think my grade is wrong?",
+   "how much are tutorials worth?"
+  ],
+  "terms": [
+   "showing up",
+   "missing class",
+   "medical note",
+   "excused absence",
+   "weighting",
+   "score",
+   "marks",
+   "disputing a grade",
+   "IA",
+   "makeup work"
+  ]
+ },
+ "a5f28cdbe74ee5fa17333e674607eaabebcc165f1ec32d38e458c6d987ddb07a": {
+  "about": "the rules regarding cheating and honesty in tutorials: what you can and cannot do when working with others and submitting reports.",
+  "questions": [
+   "can I work with my friends in tutorials?",
+   "is it okay to copy someone else's report?",
+   "what happens if I cheat?",
+   "can I collaborate on tutorial problems?",
+   "what is the policy on academic dishonesty?"
+  ],
+  "terms": [
+   "plagiarism",
+   "cheating",
+   "collaboration rules",
+   "original work",
+   "misconduct",
+   "group work",
+   "dishonesty"
+  ]
+ }
+}
