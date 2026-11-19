@@ -7,6 +7,7 @@ import { SYSTEM_PROMPT, answerText, buildUserMessage, verifyAnswer } from "./ans
 import { SHORT_TTL_S, TTL_S, answerCache, cacheKey } from "./cache.js";
 import { complete, usageCounter } from "./llm.js";
 import { CATALOG, searchLaurier } from "./laurier.js";
+import { retrievalLog } from "./log.js";
 import { BM25, cosine, expandQuery, rrf } from "./retrieval.js";
 
 // The Laurier policy index (policy_index/), when its D1 database and Vectorize index are bound.
@@ -213,10 +214,14 @@ export default {
     const req = parseRequest(body);
     if (req.error) return json({ error: req.error }, 400);
 
+    const t0 = Date.now();
     try {
-      return json(await ask(env, ctx, req));
+      const out = await ask(env, ctx, req);
+      console.log(retrievalLog(req, out, { ms: Date.now() - t0 }));
+      return json(out);
     } catch (e) {
       const detail = String(e.message || e);
+      console.error(retrievalLog(req, null, { ms: Date.now() - t0, error: detail }));
       // Workers AI error 4006: the account's daily neuron allowance is used up for now.
       if (/\b4006\b|daily free allocation/.test(detail)) return json({ error: "daily_limit", detail }, 429);
       return json({ error: "Upstream model error", detail }, 502);

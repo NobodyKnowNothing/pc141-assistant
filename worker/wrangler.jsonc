@@ -3,6 +3,9 @@
   "main": "src/index.js",
   "compatibility_date": "2026-10-01",
   "ai": { "binding": "AI" },
+  // Workers Logs: keeps every request's console output (src/log.js writes one line per question
+  // with the ranked sources and scores), searchable in the dashboard under Observability.
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
   // The Laurier policy index (policy_index/README.md), filled and re-checked weekly by
   // `node policy_index/src/cli.mjs sync --store cloudflare`. Remove both bindings to go back to
   // fetching catalog pages live. "remote": true makes `wrangler dev` use the real database and index.
@@ -11,6 +14,8 @@
   "vars": {
     "ALLOWED_ORIGIN": "https://nobodyknownothing.github.io",
     // "off" stops the Worker from querying wlu.ca's site search (see src/laurier.js)
-    "SITE_SEARCH": "on"
+    // Off: Laurier answers come only from the policy index (WLU-wide policies). Site search pulled
+    // in unrelated pages, such as another course's outline for "marking scheme?".
+    "SITE_SEARCH": "off"
   }
 }

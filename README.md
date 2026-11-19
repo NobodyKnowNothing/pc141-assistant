@@ -39,7 +39,7 @@ question ──► retrieve PC141 sections ──┐
 
 - **PC141 documents.** `scripts/export_chunks.py` splits the PDFs in `files/` by section into `worker/src/chunks.json` (63 sections). Headings are detected from PDF fonts: whole-line bold text, numbered headings like "3.2 Bounding", and MyLearningSpace posts. Citations read like *PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy, p. 4*. Students can pick their lab and tutorial section (e.g. L04, T02), so answers about times and rooms use their section.
 - **Laurier policy index.** The 167 governance pages listed in the wlu.ca sitemap, plus 16 hand-picked pages (2026/27 Undergraduate Academic Calendar sections and dates; students.wlu.ca pages on academic integrity, Gen AI, deferred exams, absences, petitions and Accessible Learning). They are split into sections, with long sections split by clause, so a citation can point to *12.2 Student Code of Conduct: Academic Misconduct > 4.04 Penalties for Academic Misconduct, 4.04.01* and link straight to it.
-- **Laurier site search.** For anything outside the index, such as transcripts, parking or the OneCard, the Worker queries the endpoint behind wlu.ca's search box and fetches the pages live, caching each for 6 hours. It isn't a published API, so the Worker sends one request per question; set `SITE_SEARCH` to `"off"` in `worker/wrangler.jsonc` to disable it. News posts are skipped. PDF, Word and Qualtrics forms are listed as links when the question asks for a form, but are not quoted.
+- **Laurier site search (off by default).** Laurier answers come only from the policy index. With `SITE_SEARCH` set to `"on"`, for anything outside the index, such as transcripts, parking or the OneCard, the Worker queries the endpoint behind wlu.ca's search box and fetches the pages live, caching each for 6 hours. It isn't a published API, so the Worker sends one request per question; it was turned off because it pulled in unrelated pages, such as another course's outline. News posts are skipped. PDF, Word and Qualtrics forms are listed as links when the question asks for a form, but are not quoted.
 
 Each Laurier source is labelled as a *university policy* (with its revision date), the *Academic Calendar* or a *guidance page*. When they disagree, the policy or calendar comes first. Campus tabs (Waterloo, Brantford, Kitchener, Milton) stay in the section name, and the model must say when a rule only covers one campus, faculty or group of students.
 
@@ -151,7 +151,7 @@ Configuration (`worker/wrangler.jsonc` and secrets):
 |---|---|
 | `POLICY_DB`, `POLICY_INDEX` | D1 database and Vectorize index `wlu-policies`. Remove both to fall back to fetching catalog pages live |
 | `ALLOWED_ORIGIN` | The frontend origin allowed to call the API |
-| `SITE_SEARCH` | `"on"` / `"off"` for wlu.ca site search |
+| `SITE_SEARCH` | `"on"` / `"off"` (default) for wlu.ca site search |
 | `GROQ_API_KEY` (secret) | Enables Groq answers: `npx wrangler secret put GROQ_API_KEY`. Stray BOMs and line breaks from a Windows shell are stripped |
 | `GROQ_MODEL`, `WORKERS_AI_DAILY_ANSWERS` | Groq model and the daily Workers AI answer budget (default 25) |
 
