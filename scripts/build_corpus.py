@@ -84,7 +84,7 @@ def embedder():
     TextEmbedding.add_custom_model(model=name, pooling=PoolingType.MEAN, normalization=True, sources=ModelSource(hf="Xenova/bge-small-en-v1.5"), dim=384, model_file="onnx/model.onnx")
     model = TextEmbedding(name)
     # One text at a time: batching pads short texts, which changes their mean-pooled vectors.
-    return lambda texts: [[round(float(x), 4) for x in model.embed([t]).__next__()] for t in texts]
+    return lambda texts: [[round(float(x), 4) for x in next(model.embed([t]))] for t in texts]
 
 
 def write(name, data):

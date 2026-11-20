@@ -85,8 +85,11 @@ All three models run on Workers AI's free allowance (10,000 neurons a day, share
 ## Evaluation
 
 ```bash
-.venv/Scripts/python scripts/evaluate.py retrieval    # sources only: cheap
-.venv/Scripts/python scripts/evaluate.py answers      # full answers: ~47 answer-model calls
+.venv/Scripts/python scripts/evaluate.py retrieval    # sources only for the 47 questions
+.venv/Scripts/python scripts/evaluate.py rewordings   # sources only for the 101 rewordings
+.venv/Scripts/python scripts/evaluate.py answers      # full answers for the 47 questions
 ```
+
+Each run fits in one day's allowance, but not all three together: a question costs about 5 neurons for retrieval (mostly the reranker reading all 63 PC141 sections) and 30 more for the answer, so the free allowance covers roughly 250 student questions a day.
 
 [`data/web_eval.json`](data/web_eval.json) has 47 questions: 19 on the course documents, 4 admin questions, 3 on the marking scheme, 10 on the key student pages, 6 on other policies and 5 the sources can't answer. [`data/paraphrase_eval.json`](data/paraphrase_eval.json) has 101 rewordings of the course questions. Results are saved in `results/`.

@@ -173,19 +173,18 @@ class Corpus:
         query = expand_query(question)
         [query_vector] = await models.embed([query])
         course, laurier = await asyncio.gather(self.search_course(query, query_vector, models), self.search_laurier(query, query_vector, models))
-        return [{"n": n, **s} for n, s in enumerate(with_intros(self, course) + laurier, start=1)]
+        return [{"n": n, **s} for n, s in enumerate(self.with_intros(course) + laurier, start=1)]
 
-
-def with_intros(corpus, found):
-    """An announcement's opening text ("Labs are held on alternate weeks in Room N2089") is context
-    for every subsection under it, so the best-ranked subsection carries it as `intro`."""
-    seen = {c["id"] for c in found}
-    out = []
-    for c in found:
-        top, *rest = c["section"].split(" > ")
-        parent = rest and next((p for p in corpus.chunks if p.get("file") == c["file"] and p["section"] == top), None)
-        if parent and parent["id"] not in seen:
-            seen.add(parent["id"])
-            c = {**c, "intro": parent["text"]}
-        out.append(c)
-    return out
+    def with_intros(self, found):
+        """An announcement's opening text ("Labs are held on alternate weeks in Room N2089") is
+        context for every subsection under it, so the best-ranked subsection carries it as `intro`."""
+        seen = {c["id"] for c in found}
+        out = []
+        for c in found:
+            top, *rest = c["section"].split(" > ")
+            parent = rest and next((p for p in self.chunks if p.get("file") == c["file"] and p["section"] == top), None)
+            if parent and parent["id"] not in seen:
+                seen.add(parent["id"])
+                c = {**c, "intro": parent["text"]}
+            out.append(c)
+        return out

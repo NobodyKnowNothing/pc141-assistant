@@ -1,14 +1,16 @@
 """Measure the assistant against the deployed (or a local) backend.
 
     python scripts/evaluate.py retrieval                 # sources only: embedding + reranker calls
+    python scripts/evaluate.py rewordings                # sources only, for 101 reworded questions
     python scripts/evaluate.py answers                   # full answers: one answer-model call each
     python scripts/evaluate.py answers --ids E1,L2,U1    # a subset, to save the daily allowance
     python scripts/evaluate.py retrieval --url http://127.0.0.1:8787
 
-`retrieval` runs data/web_eval.json (does the expected PC141 section or Laurier page come back?)
-and data/paraphrase_eval.json (101 rewordings of the course questions: where does the target
-section rank?). `answers` runs data/web_eval.json and checks what the answer cites and whether its
-quotes verify. Results go to results/<mode>.json; the summary is printed.
+`retrieval` runs data/web_eval.json: does the expected PC141 section or Laurier page come back?
+`rewordings` runs data/paraphrase_eval.json: where does the target section rank when a course
+question is reworded? `answers` runs data/web_eval.json and checks what the answer cites and
+whether its quotes verify. Each mode fits in one day's free allowance. Results go to
+results/<mode>.json; the summary is printed.
 """
 import argparse
 import json
@@ -104,24 +106,25 @@ def run_questions(url, items, retrieve_only):
 
 def run_paraphrases(url):
     items = json.loads((ROOT / "data" / "paraphrase_eval.json").read_text(encoding="utf-8"))
-    ranks = {}
+    rows = []
     for item in items:
         for q in item["rewordings"]:
             r = ask(url, q, True)
             course = [s for s in r.get("sources", []) if s["kind"] == "pc141"]
-            ranks[f"{item['id']}|{q}"] = next((i for i, s in enumerate(course, 1) if section_hit(s, item)), None) if "sources" in r else "error"
-    found = [v for v in ranks.values() if v != "error"]
+            rank = next((i for i, s in enumerate(course, 1) if section_hit(s, item)), None) if "sources" in r else "error"
+            rows.append({"id": item["id"], "question": q, "rank": rank})
+    found = [r["rank"] for r in rows if r["rank"] != "error"]
     summary = {
-        "found in top 5": f"{sum(v is not None for v in found)}/{len(found)}",
-        "ranked first": f"{sum(v == 1 for v in found)}/{len(found)}",
+        "Target section in the top 5": f"{sum(v is not None for v in found)}/{len(found)}",
+        "Ranked first": f"{sum(v == 1 for v in found)}/{len(found)}",
         "MRR": round(sum(1 / v for v in found if v) / len(found), 3),
     }
-    return summary, ranks
+    return summary, rows
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("mode", choices=["retrieval", "answers"])
+    ap.add_argument("mode", choices=["retrieval", "rewordings", "answers"])
     ap.add_argument("--url", default=API)
     ap.add_argument("--ids", help="comma-separated question ids (default: all)")
     args = ap.parse_args()
@@ -130,8 +133,11 @@ def main():
     items = [i for i in items if not args.ids or i["id"] in args.ids.split(",")]
     result = {"date": date.today().isoformat(), "url": args.url}
     try:
-        rows = run_questions(args.url, items, args.mode == "retrieval")
-        summary = {name: tally(rows, key) for name, key in [("PC141 section retrieved", "pc141_retrieved"), ("Laurier page retrieved", "laurier_retrieved")]}
+        if args.mode == "rewordings":
+            summary, rows = run_paraphrases(args.url)
+        else:
+            rows = run_questions(args.url, items, args.mode == "retrieval")
+            summary = {name: tally(rows, key) for name, key in [("PC141 section retrieved", "pc141_retrieved"), ("Laurier page retrieved", "laurier_retrieved")]}
         if args.mode == "answers":
             ok = [r for r in rows if "status" in r]
             summary.update({
@@ -142,8 +148,6 @@ def main():
                 "Statements whose quote checks out": f"{sum(r['verified'] for r in ok)}/{sum(r['claims'] for r in ok)}",
                 "Median seconds per answer": statistics.median(r["seconds"] for r in ok) if ok else "-",
             })
-        elif not args.ids:
-            summary["Rewordings"], result["paraphrase_ranks"] = run_paraphrases(args.url)
     except OutOfQuota:
         print("Stopped: the Workers AI daily allowance is used up (HTTP 429). Nothing was saved.")
         return
