@@ -1,0 +1,516 @@
+{
+ "date": "2026-11-20",
+ "url": "https://wlu-rag-api.nobodyknownothing.workers.dev",
+ "summary": {
+  "Target section in the top 5": "100/101",
+  "Ranked first": "77/101",
+  "MRR": 0.856
+ },
+ "rows": [
+  {
+   "id": "Q1",
+   "question": "what does being off by a factor of 10 mean for my estimate",
+   "rank": 2
+  },
+  {
+   "id": "Q1",
+   "question": "estimate off by an order of magnitude?",
+   "rank": null
+  },
+  {
+   "id": "Q1",
+   "question": "if my guess is 10x too big is that bad",
+   "rank": 3
+  },
+  {
+   "id": "Q1",
+   "question": "what do they mean by a reasonable estimate",
+   "rank": 1
+  },
+  {
+   "id": "Q2",
+   "question": "how do i get the range from upper and lower bound",
+   "rank": 1
+  },
+  {
+   "id": "Q2",
+   "question": "range of values definition",
+   "rank": 1
+  },
+  {
+   "id": "Q2",
+   "question": "difference between max and min estimate",
+   "rank": 4
+  },
+  {
+   "id": "Q2",
+   "question": "what is the range in bounding",
+   "rank": 1
+  },
+  {
+   "id": "Q3",
+   "question": "two numbers in the same decade on a log scale",
+   "rank": 1
+  },
+  {
+   "id": "Q3",
+   "question": "how to read a log scale",
+   "rank": 1
+  },
+  {
+   "id": "Q3",
+   "question": "what is a cycle on a logarithmic axis",
+   "rank": 1
+  },
+  {
+   "id": "Q3",
+   "question": "log scale same cycle meaning",
+   "rank": 1
+  },
+  {
+   "id": "Q4",
+   "question": "my best guess isn't in the middle of the bounds, what uncertainty do i use",
+   "rank": 1
+  },
+  {
+   "id": "Q4",
+   "question": "how to calculate uncertainty from bounds",
+   "rank": 1
+  },
+  {
+   "id": "Q4",
+   "question": "uncertainty when estimate is not centered",
+   "rank": 1
+  },
+  {
+   "id": "Q4",
+   "question": "plus minus value for an estimate",
+   "rank": 1
+  },
+  {
+   "id": "Q5",
+   "question": "why is 12 x 10^3 wrong",
+   "rank": 1
+  },
+  {
+   "id": "Q5",
+   "question": "rules for scientific notation",
+   "rank": 1
+  },
+  {
+   "id": "Q5",
+   "question": "how many digits before the decimal in sci notation",
+   "rank": 1
+  },
+  {
+   "id": "Q5",
+   "question": "is 45 x 10^2 proper scientific notation",
+   "rank": 1
+  },
+  {
+   "id": "Q6",
+   "question": "who teaches the lab",
+   "rank": 2
+  },
+  {
+   "id": "Q6",
+   "question": "lab instructor email?",
+   "rank": 3
+  },
+  {
+   "id": "Q6",
+   "question": "who's the prof for PC141 labs",
+   "rank": 2
+  },
+  {
+   "id": "Q6",
+   "question": "name of the lab instructor",
+   "rank": 1
+  },
+  {
+   "id": "Q7",
+   "question": "what do i need to bring to lab",
+   "rank": 3
+  },
+  {
+   "id": "Q7",
+   "question": "lab supplies",
+   "rank": 2
+  },
+  {
+   "id": "Q7",
+   "question": "do I need a notebook for lab",
+   "rank": 4
+  },
+  {
+   "id": "Q7",
+   "question": "what should I have with me in the lab",
+   "rank": 5
+  },
+  {
+   "id": "Q8",
+   "question": "what if im late to lab",
+   "rank": 2
+  },
+  {
+   "id": "Q8",
+   "question": "can i still come in if I'm 15 minutes late",
+   "rank": 2
+  },
+  {
+   "id": "Q8",
+   "question": "lateness policy for lab sessions",
+   "rank": 4
+  },
+  {
+   "id": "Q8",
+   "question": "when do they stop letting people into the lab",
+   "rank": 1
+  },
+  {
+   "id": "Q9",
+   "question": "im sick and cant go to lab",
+   "rank": 1
+  },
+  {
+   "id": "Q9",
+   "question": "doctors note for missed lab",
+   "rank": 1
+  },
+  {
+   "id": "Q9",
+   "question": "make up lab",
+   "rank": 1
+  },
+  {
+   "id": "Q9",
+   "question": "I have the flu tomorrow, what about my lab",
+   "rank": 1
+  },
+  {
+   "id": "Q10",
+   "question": "i think my lab mark is wrong",
+   "rank": 1
+  },
+  {
+   "id": "Q10",
+   "question": "how to appeal a lab grade",
+   "rank": 1
+  },
+  {
+   "id": "Q10",
+   "question": "regrade request",
+   "rank": 1
+  },
+  {
+   "id": "Q10",
+   "question": "deadline to question a mark",
+   "rank": 1
+  },
+  {
+   "id": "Q11",
+   "question": "phone in lab?",
+   "rank": 1
+  },
+  {
+   "id": "Q11",
+   "question": "can I bring my laptop to the lab",
+   "rank": 1
+  },
+  {
+   "id": "Q11",
+   "question": "are electronics allowed in lab",
+   "rank": 1
+  },
+  {
+   "id": "Q11",
+   "question": "smartwatch during lab ok?",
+   "rank": 1
+  },
+  {
+   "id": "Q12",
+   "question": "forgot my lab manual",
+   "rank": 1
+  },
+  {
+   "id": "Q12",
+   "question": "do I lose marks for not printing the manual",
+   "rank": 1
+  },
+  {
+   "id": "Q12",
+   "question": "no printed lab manual penalty",
+   "rank": 1
+  },
+  {
+   "id": "Q12",
+   "question": "can i use the manual on my ipad instead of printing",
+   "rank": 1
+  },
+  {
+   "id": "Q13",
+   "question": "what to bring to tutorial",
+   "rank": 1
+  },
+  {
+   "id": "Q13",
+   "question": "tutorial supplies",
+   "rank": 1
+  },
+  {
+   "id": "Q13",
+   "question": "do i need a calculator for tut",
+   "rank": 1
+  },
+  {
+   "id": "Q13",
+   "question": "things needed for tutorials",
+   "rank": 1
+  },
+  {
+   "id": "Q14",
+   "question": "phones in tutorial?",
+   "rank": 1
+  },
+  {
+   "id": "Q14",
+   "question": "can i use my laptop in tut",
+   "rank": 1
+  },
+  {
+   "id": "Q14",
+   "question": "electronics allowed in tutorials",
+   "rank": 1
+  },
+  {
+   "id": "Q14",
+   "question": "is my tablet allowed during tutorial",
+   "rank": 1
+  },
+  {
+   "id": "Q15",
+   "question": "how do i email the tutorial instructor",
+   "rank": 1
+  },
+  {
+   "id": "Q15",
+   "question": "tutorial prof email",
+   "rank": 1
+  },
+  {
+   "id": "Q15",
+   "question": "what should i put in the subject line when emailing",
+   "rank": 1
+  },
+  {
+   "id": "Q15",
+   "question": "contact info for tutorials",
+   "rank": 1
+  },
+  {
+   "id": "Q16",
+   "question": "office hours?",
+   "rank": 1
+  },
+  {
+   "id": "Q16",
+   "question": "when can i get help outside of class",
+   "rank": 3
+  },
+  {
+   "id": "Q16",
+   "question": "where is the instructor's office",
+   "rank": 1
+  },
+  {
+   "id": "Q16",
+   "question": "drop in help times",
+   "rank": 1
+  },
+  {
+   "id": "Q17",
+   "question": "can i use my notes in the tutorial",
+   "rank": 1
+  },
+  {
+   "id": "Q17",
+   "question": "is the tutorial open book",
+   "rank": 5
+  },
+  {
+   "id": "Q17",
+   "question": "what am i allowed to use on tutorial reports",
+   "rank": 1
+  },
+  {
+   "id": "Q17",
+   "question": "textbook allowed in tutorial?",
+   "rank": 1
+  },
+  {
+   "id": "Q18",
+   "question": "my tutorial mark is wrong",
+   "rank": 1
+  },
+  {
+   "id": "Q18",
+   "question": "how long to dispute a tutorial grade",
+   "rank": 2
+  },
+  {
+   "id": "Q18",
+   "question": "tutorial grade concern deadline",
+   "rank": 2
+  },
+  {
+   "id": "Q18",
+   "question": "who do i talk to about a tutorial mark",
+   "rank": 2
+  },
+  {
+   "id": "Q19",
+   "question": "can i use chatgpt in tutorial",
+   "rank": 2
+  },
+  {
+   "id": "Q19",
+   "question": "what happens if i use ai in tut",
+   "rank": 2
+  },
+  {
+   "id": "Q19",
+   "question": "using google during tutorial penalty",
+   "rank": 1
+  },
+  {
+   "id": "Q19",
+   "question": "is AI allowed on tutorial reports",
+   "rank": 1
+  },
+  {
+   "id": "E1",
+   "question": "what time is lab",
+   "rank": 1
+  },
+  {
+   "id": "E1",
+   "question": "lab schedule",
+   "rank": 1
+  },
+  {
+   "id": "E1",
+   "question": "which day do I have lab",
+   "rank": 1
+  },
+  {
+   "id": "E1",
+   "question": "first lab date",
+   "rank": 1
+  },
+  {
+   "id": "E2",
+   "question": "missed lab",
+   "rank": 1
+  },
+  {
+   "id": "E2",
+   "question": "i skipped lab yesterday what now",
+   "rank": 1
+  },
+  {
+   "id": "E2",
+   "question": "can i make up a lab i missed",
+   "rank": 1
+  },
+  {
+   "id": "E2",
+   "question": "absent from lab",
+   "rank": 1
+  },
+  {
+   "id": "E3",
+   "question": "how to hand in post lab",
+   "rank": 1
+  },
+  {
+   "id": "E3",
+   "question": "post-lab submission",
+   "rank": 1
+  },
+  {
+   "id": "E3",
+   "question": "where does the post lab go",
+   "rank": 1
+  },
+  {
+   "id": "E3",
+   "question": "upload post lab 1",
+   "rank": 1
+  },
+  {
+   "id": "E4",
+   "question": "can i copy my partner's report",
+   "rank": 1
+  },
+  {
+   "id": "E4",
+   "question": "cheating in lab",
+   "rank": 1
+  },
+  {
+   "id": "E4",
+   "question": "is sharing data with my group allowed",
+   "rank": 2
+  },
+  {
+   "id": "E4",
+   "question": "what counts as plagarism",
+   "rank": 2
+  },
+  {
+   "id": "M1",
+   "question": "grade weighting?",
+   "rank": 2
+  },
+  {
+   "id": "M1",
+   "question": "how are labs marked",
+   "rank": 1
+  },
+  {
+   "id": "M1",
+   "question": "mark breakdown",
+   "rank": 1
+  },
+  {
+   "id": "M1",
+   "question": "what percent is the post lab worth",
+   "rank": 1
+  },
+  {
+   "id": "M1",
+   "question": "rubric for the lab",
+   "rank": 1
+  },
+  {
+   "id": "L1",
+   "question": "late penalty",
+   "rank": 1
+  },
+  {
+   "id": "L1",
+   "question": "what if i hand in post lab late",
+   "rank": 1
+  },
+  {
+   "id": "L1",
+   "question": "how much do i lose per day late",
+   "rank": 1
+  },
+  {
+   "id": "L1",
+   "question": "late submission policy",
+   "rank": 1
+  }
+ ]
+}
