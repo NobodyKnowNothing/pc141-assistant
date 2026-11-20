@@ -8,3 +8,5 @@ __pycache__/
 node_modules/
 .wrangler/
 policy_index/data/
+.vercel
+.env*
