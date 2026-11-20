@@ -1,0 +1,763 @@
+{
+ "date": "2026-11-20",
+ "url": "https://wlu-rag-api.nobodyknownothing.workers.dev",
+ "summary": {
+  "PC141 section retrieved": "25/26",
+  "Laurier page retrieved": "17/17"
+ },
+ "rows": [
+  {
+   "id": "Q1",
+   "group": "course",
+   "seconds": 1.4,
+   "pc141_retrieved": false,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.5 Order of Magnitude Calculations > 3.5.3 When are Order of Magnitude Calculations used?",
+    "[2] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.5 Order of Magnitude Calculations",
+    "[3] PC141 Lab Manual: Estimation and Bounding > Recap",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.5 Order of Magnitude Calculations > 3.5.2 Illustration of Order of Magnitude Calculation",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.6 Logarithmic Scale"
+   ]
+  },
+  {
+   "id": "Q2",
+   "group": "course",
+   "seconds": 1.6,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.2 Bounding > 3.2.2 Range of Possible Values",
+    "[2] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.2 Bounding",
+    "[3] PC141 Lab Manual: Estimation and Bounding > Recap",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.7 Uncertainties",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.3 Familiar Comparisons > 3.3.1 Illustration of Comparison"
+   ]
+  },
+  {
+   "id": "Q3",
+   "group": "course",
+   "seconds": 1.6,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.6 Logarithmic Scale",
+    "[2] PC141 Lab Manual: Estimation and Bounding > List of Figures",
+    "[3] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.6 Logarithmic Scale",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.2 Bounding > 3.2.2 Range of Possible Values",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.3 Familiar Comparisons"
+   ]
+  },
+  {
+   "id": "Q4",
+   "group": "course",
+   "seconds": 1.4,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.7 Uncertainties",
+    "[2] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.3 Familiar Comparisons",
+    "[3] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.2 Bounding > 3.2.1 Picking Realistic Bounds",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.2 Bounding > 3.2.2 Range of Possible Values",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.3 Familiar Comparisons > 3.3.1 Illustration of Comparison"
+   ]
+  },
+  {
+   "id": "Q5",
+   "group": "course",
+   "seconds": 1.4,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > Appendix A: Reference Material > A.2 Scientific Notation (Standard Form)",
+    "[2] PC141 Lab Manual: Estimation and Bounding > Appendix A: Reference Material > A.1 Significant Figures (SigFigs)",
+    "[3] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.5 Order of Magnitude Calculations",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.7 Uncertainties",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.5 Order of Magnitude Calculations > 3.5.2 Illustration of Order of Magnitude Calculation"
+   ]
+  },
+  {
+   "id": "Q6",
+   "group": "course",
+   "seconds": 1.5,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Contact Information",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[3] PC141 Tutorial Announcements (MyLS) > Introduction > Communication",
+    "[4] PC141 Lab Announcements (MyLS) > Post lab 1 > LAB SYLLABUS > Lab Instructor Assistance (IA)",
+    "[5] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Office Hours",
+    "[6] Grades > Final Grade Appeals",
+    "[7] Grades > Final Grade Appeals",
+    "[8] Procedures Relating to Policy on University Closing Due to Severe Weather (7.6) > 4.0 In the Event the University or Individual Campus or Location Closes > 4.1 All in-person classes on the closed campus(es) or location(s) are cancelled."
+   ]
+  },
+  {
+   "id": "Q7",
+   "group": "course",
+   "seconds": 1.3,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[2] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > What to Bring to the First Lab",
+    "[3] PC141 Tutorial Announcements (MyLS) > Introduction > Preparation and Materials",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Lab Format",
+    "[5] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Preparation for the First Lab",
+    "[6] Examinations > Examination Regulations for Candidates",
+    "[7] Student Regulations > Attendance",
+    "[8] Grades > Attendance"
+   ]
+  },
+  {
+   "id": "Q8",
+   "group": "course",
+   "seconds": 1.5,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Post lab 1 > LATE SUBMISSION > Deduction for late submission",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[5] PC141 Lab Manual: Estimation and Bounding > Appendix A: Reference Material > A.6 Quick Pre-Submission Checklist",
+    "[6] Examinations > Virtual Campus Courses: In-Person Midterms, In-Person Assessments, and In-Person Final Examinations Policy",
+    "[7] Examinations > Virtual Campus Courses: In-Person Midterms, In-Person Assessments, and In-Person Final Examinations Policy",
+    "[8] Faculty Petitions > Overview"
+   ]
+  },
+  {
+   "id": "Q9",
+   "group": "course",
+   "seconds": 1.8,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[5] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > What to Bring to the First Lab",
+    "[6] Managing Unexpected Academic Disruptions > Types of Short-Term Absences > Less Than One Week",
+    "[7] Academic Petitions and Appeals > Academic Petition Process > Documentation > Medical Documentation Expectations",
+    "[8] Policy 2.3 Academic Accommodation of Students with Disabilities > Definitions (6.00–7.00)"
+   ]
+  },
+  {
+   "id": "Q10",
+   "group": "course",
+   "seconds": 1.3,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Lab Announcements (MyLS) > Post lab 1",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Instructional Support During Tutorials",
+    "[5] PC141 Lab Announcements (MyLS) > Post lab 1 > Estimate the Olympic swimming pool problem",
+    "[6] Academic Petitions and Appeals > Types of Exceptions to University Undergraduate Academic Regulations > Final Grade Appeals > Step 1: Instructor",
+    "[7] Grades > Final Grade Appeals",
+    "[8] Academic Petitions and Appeals > Types of Exceptions to University Undergraduate Academic Regulations > Final Grade Appeals > Step 2: Chair"
+   ]
+  },
+  {
+   "id": "Q11",
+   "group": "course",
+   "seconds": 1.5,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Introduction > Digital Tools Policy",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Lab Notebook",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Lab Format",
+    "[6] 9.3 Classroom Use of Electronic Devices > Policy (4.00)",
+    "[7] 9.3 Classroom Use of Electronic Devices > Definitions (2.00)",
+    "[8] 12.3 Non-Academic Student Code of Conduct > Related Policies, Procedures and Documents (7.17–7.18)"
+   ]
+  },
+  {
+   "id": "Q12",
+   "group": "course",
+   "seconds": 1.8,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Lab Format",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy"
+   ]
+  },
+  {
+   "id": "Q13",
+   "group": "course",
+   "seconds": 1.7,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Introduction > Preparation and Materials",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[4] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > What to Bring to the First Lab",
+    "[5] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Preparation Expectations",
+    "[6] Gen AI Student Resource Hub > Gen AI and Academic Integrity > Follow Copyright",
+    "[7] Student Regulations > Attendance",
+    "[8] Grades > Attendance"
+   ]
+  },
+  {
+   "id": "Q14",
+   "group": "course",
+   "seconds": 1.3,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Introduction > Digital Tools Policy",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[5] PC141 Tutorial Announcements (MyLS) > Introduction > Preparation and Materials",
+    "[6] 9.3 Classroom Use of Electronic Devices > Policy (4.00)",
+    "[7] 9.3 Classroom Use of Electronic Devices > Definitions (2.00)"
+   ]
+  },
+  {
+   "id": "Q15",
+   "group": "course",
+   "seconds": 1.4,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Contact Information",
+    "[2] PC141 Tutorial Announcements (MyLS) > Introduction > Communication",
+    "[3] PC141 Lab Announcements (MyLS) > Post lab 1 > LAB SYLLABUS > Lab Instructor Assistance (IA)",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[5] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Office Hours",
+    "[6] Procedures for Student Code of Conduct: Academic Misconduct > Procedures for Investigation and Adjudication in Cases of Academic Misconduct",
+    "[7] Procedures for Undergraduate and Graduate Student Accommodations > Accommodation Planning (2.02–2.04)",
+    "[8] Procedures Relating to Policy on University Closing Due to Severe Weather (7.6) > 3.0 Communications"
+   ]
+  },
+  {
+   "id": "Q16",
+   "group": "course",
+   "seconds": 1.3,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Office Hours",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[3] PC141 Lab Announcements (MyLS) > Post lab 1 > LAB SYLLABUS > Lab Instructor Assistance (IA)",
+    "[4] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Contact Information",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[6] 2.5 Policy on Academic Disruption > II. Procedures > B. Short Disruptions",
+    "[7] Accessible Learning > Connect with Us",
+    "[8] Deferred Exams > Faculty-Specific Forms and Information > Faculty of Human and Social Sciences"
+   ]
+  },
+  {
+   "id": "Q17",
+   "group": "course",
+   "seconds": 1.4,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Open-Book Written Tutorial Report",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures",
+    "[5] PC141 Tutorial Announcements (MyLS) > Introduction",
+    "[6] 9.3 Classroom Use of Electronic Devices > Policy (4.00)"
+   ]
+  },
+  {
+   "id": "Q18",
+   "group": "course",
+   "seconds": 1.4,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Preparation Expectations",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[5] PC141 Tutorial Announcements (MyLS) > Introduction > Tutorial Component",
+    "[6] Grades > Final Grade Appeals",
+    "[7] Academic Petitions and Appeals > Types of Exceptions to University Undergraduate Academic Regulations > Final Grade Appeals > Step 1: Instructor",
+    "[8] Grades > Final Grade Appeals"
+   ]
+  },
+  {
+   "id": "Q19",
+   "group": "course",
+   "seconds": 1.8,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[2] PC141 Tutorial Announcements (MyLS) > Introduction > Digital Tools Policy",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Instructional Support During Tutorials",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[6] Policy 12.2 Student Code of Conduct: Academic Misconduct > 4.01 Academic Misconduct (4.02.03–4.02.07)",
+    "[7] Deferred Exams > Deferred Final Exams > Petitions on Other Grounds > Generative AI Tools & Deferred Examination Petition Submissions",
+    "[8] Academic Petitions and Appeals > Academic Petition Process > Generative AI Tools & Petition Submissions"
+   ]
+  },
+  {
+   "id": "E1",
+   "group": "email",
+   "seconds": 1.4,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[2] PC141 Lab Announcements (MyLS) > Intro, Lab 1",
+    "[3] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Laboratory Schedule — First Lab Week (September 16)",
+    "[4] PC141 Lab Announcements (MyLS) > Post lab 1 > Estimate the Olympic swimming pool problem",
+    "[5] PC141 Lab Announcements (MyLS) > Post lab 1"
+   ]
+  },
+  {
+   "id": "E2",
+   "group": "email",
+   "seconds": 1.4,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[4] PC141 Lab Announcements (MyLS) > Post lab 1 > LATE SUBMISSION > Deduction for late submission",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[6] Student Regulations > Attendance",
+    "[7] Examinations > Examination Regulations for Candidates",
+    "[8] Grades > Attendance"
+   ]
+  },
+  {
+   "id": "E3",
+   "group": "email",
+   "seconds": 6.5,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Post lab 1",
+    "[2] PC141 Lab Announcements (MyLS) > Post lab 1 > Estimate the Olympic swimming pool problem",
+    "[3] PC141 Tutorial Announcements (MyLS) > Introduction > Communication",
+    "[4] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Contact Information",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Lab Format",
+    "[6] Procedures Relating to Policy on University Closing Due to Severe Weather (7.6) > 4.0 In the Event the University or Individual Campus or Location Closes > 4.1 All in-person classes on the closed campus(es) or location(s) are cancelled."
+   ]
+  },
+  {
+   "id": "E4",
+   "group": "email",
+   "seconds": 3.6,
+   "pc141_retrieved": true,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Open-Book Written Tutorial Report",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures",
+    "[5] PC141 Tutorial Announcements (MyLS) > Introduction > Digital Tools Policy",
+    "[6] Policy 12.2 Student Code of Conduct: Academic Misconduct > 4.01 Academic Misconduct (4.02–4.02.02)",
+    "[7] Academic Misconduct Defined > Types of Academic Misconduct > Plagiarism",
+    "[8] Academic Misconduct Defined > Types of Academic Misconduct > Self-Plagiarism"
+   ]
+  },
+  {
+   "id": "L1",
+   "group": "laurier",
+   "seconds": 1.7,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Lab Manual: Estimation and Bounding > Appendix A: Reference Material > A.6 Quick Pre-Submission Checklist",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Learning Outcomes",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.4 Less Familiar Comparison",
+    "[6] Deferred Exams > Deferred Final Exams > Petitions on Other Grounds",
+    "[7] Deferred Exams > Deferred Final Exams > Three Exams Within 24 Hours",
+    "[8] Examinations > Final University Examinations"
+   ]
+  },
+  {
+   "id": "L2",
+   "group": "laurier",
+   "seconds": 1.6,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[5] PC141 Lab Manual: Estimation and Bounding > Recap",
+    "[6] Academic Misconduct Defined > Academic Misconduct",
+    "[7] Academic Misconduct Defined > Types of Academic Misconduct > Falsifying, Misrepresenting or Forging an Academic Record or Supporting Document",
+    "[8] 12.4 Gendered and Sexual Violence > 3.00 Definitions (3.10–3.14)"
+   ]
+  },
+  {
+   "id": "L3",
+   "group": "laurier",
+   "seconds": 1.8,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Post lab 1 > LATE SUBMISSION > Deduction for late submission",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Office Hours",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Learning Outcomes",
+    "[5] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Laboratory Schedule — First Lab Week (September 16)",
+    "[6] Adding and Dropping Courses > Overview",
+    "[7] Adding and Dropping Courses > Overview",
+    "[8] Academic & Related Dates: Fall Term 2026 (12-week courses) > December, 2026"
+   ]
+  },
+  {
+   "id": "L4",
+   "group": "laurier",
+   "seconds": 1.4,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy",
+    "[6] Policy 2.3 Academic Accommodation of Students with Disabilities > Policy > Responsibility of Students (20.00)",
+    "[7] Policy 2.3 Academic Accommodation of Students with Disabilities > Definitions (6.00–7.00)",
+    "[8] Procedures for Undergraduate and Graduate Student Accommodations > Accommodation Planning (1.00–2.01)"
+   ]
+  },
+  {
+   "id": "L5",
+   "group": "laurier",
+   "seconds": 1.5,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Introduction > Digital Tools Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.3 Familiar Comparisons",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.3 Familiar Comparisons > 3.3.1 Illustration of Comparison",
+    "[6] Gen AI Student Resource Hub > Which Tools Should I Use at Laurier?",
+    "[7] Deferred Exams > Deferred Final Exams > Petitions on Other Grounds > Generative AI Tools & Deferred Examination Petition Submissions",
+    "[8] Academic Petitions and Appeals > Academic Petition Process > Generative AI Tools & Petition Submissions"
+   ]
+  },
+  {
+   "id": "L6",
+   "group": "laurier",
+   "seconds": 2.7,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[4] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Contact Information",
+    "[5] PC141 Tutorial Announcements (MyLS) > Introduction > Preparation and Materials",
+    "[6] Managing Unexpected Academic Disruptions > Types of Short-Term Absences > Less Than One Week",
+    "[7] Academic Petitions and Appeals > Academic Petition Process > Documentation > Medical Documentation Expectations",
+    "[8] Student Regulations > Medical Excuse Slips"
+   ]
+  },
+  {
+   "id": "L7",
+   "group": "laurier",
+   "seconds": 1.8,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[4] PC141 Lab Manual: Estimation and Bounding > Appendix A: Reference Material > A.6 Quick Pre-Submission Checklist",
+    "[5] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[6] Academic Petitions and Appeals > Types of Exceptions to University Undergraduate Academic Regulations > Final Grade Appeals > This is a simplified version of the procedure. Consult the Undergraduate Academic Calendar for the full procedure.",
+    "[7] Grades > Final Grade Appeals",
+    "[8] Grades > Final Grade Appeals"
+   ]
+  },
+  {
+   "id": "L8",
+   "group": "laurier",
+   "seconds": 1.5,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[4] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Laboratory Schedule — First Lab Week (September 16)",
+    "[5] PC141 Tutorial Announcements (MyLS) > Introduction",
+    "[6] Academic & Related Dates: Fall Term 2026 (12-week courses) > October, 2026",
+    "[7] Academic & Related Dates: Fall Term 2026 (12-week courses) > November, 2026",
+    "[8] Academic & Related Dates: Winter Term 2027 (12-week courses) > July, 2026"
+   ]
+  },
+  {
+   "id": "L9",
+   "group": "laurier",
+   "seconds": 1.3,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[4] PC141 Lab Announcements (MyLS) > Post lab 1 > LATE SUBMISSION > Deduction for late submission",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Lab Format",
+    "[6] Deferred Exams > Faculty-Specific Forms and Information > Lazaridis School of Business and Economics > Three Exams Within 24 Hours",
+    "[7] Examinations > Final University Examinations",
+    "[8] Deferred Exams > Deferred Final Exams > Three Exams Within 24 Hours"
+   ]
+  },
+  {
+   "id": "L10",
+   "group": "laurier",
+   "seconds": 1.3,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Post lab 1 > LATE SUBMISSION > Deduction for late submission",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[6] Policy 12.2 Student Code of Conduct: Academic Misconduct > 4.04 Penalties for Academic Misconduct (4.04.02–4.04.03)",
+    "[7] Procedures for Student Code of Conduct: Academic Misconduct > 6.0 Subsequent (Second or Greater) Offence of Academic Misconduct: Application of Penalty",
+    "[8] Procedures for Student Code of Conduct: Academic Misconduct > 5.0 First Offence of Academic Misconduct: Application of Penalty"
+   ]
+  },
+  {
+   "id": "P1",
+   "group": "policy",
+   "seconds": 1.2,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[4] PC141 Tutorial Announcements (MyLS) > Introduction > Communication",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[6] 12.3 Non-Academic Student Code of Conduct > 1.00 Preamble (1.01–1.02)",
+    "[7] 12.3 Non-Academic Student Code of Conduct > 2.00 Purpose (2.01–2.02)",
+    "[8] 10.2 Appendix A: Documents Included in the Student Academic Record and Official Academic Transcript > 3.0. Procedure > 3.1. Information included in the Student Academic Record"
+   ]
+  },
+  {
+   "id": "P2",
+   "group": "policy",
+   "seconds": 1.7,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[5] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[6] 12.5 Student Mental Health Policy > 1.00 Purpose (1.01–1.02)",
+    "[7] 12.5 Student Mental Health Policy > 11.00 Community of Care (11.01)",
+    "[8] Procedures for Student Mental Health Policy (12.5) > 3.0 Receipt of a Report"
+   ]
+  },
+  {
+   "id": "P3",
+   "group": "policy",
+   "seconds": 1.3,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Introduction > Digital Tools Policy",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[5] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Contact Information",
+    "[6] 9.3 Classroom Use of Electronic Devices > Policy (4.00)",
+    "[7] 9.3 Classroom Use of Electronic Devices > Policy > Obligations of Instructor",
+    "[8] 12.3 Non-Academic Student Code of Conduct > Related Policies, Procedures and Documents (7.17–7.18)"
+   ]
+  },
+  {
+   "id": "P4",
+   "group": "policy",
+   "seconds": 1.5,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[2] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > What to Bring to the First Lab",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 5 Template",
+    "[5] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[6] 10.2 Appendix A: Documents Included in the Student Academic Record and Official Academic Transcript > 3.0. Procedure > 3.1. Information included in the Student Academic Record",
+    "[7] 10.2 Student Academic Record > 4.00 Policy > 4.05 Third Party Access to the Student Academic Record",
+    "[8] Examinations > Virtual Campus Courses: In-Person Midterms, In-Person Assessments, and In-Person Final Examinations Policy"
+   ]
+  },
+  {
+   "id": "P5",
+   "group": "policy",
+   "seconds": 1.3,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[5] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[6] 2.5 Policy on Academic Disruption > II. Procedures > B. Short Disruptions",
+    "[7] Managing Unexpected Academic Disruptions > Types of Short-Term Absences > More Than Two Weeks",
+    "[8] 2.5 Policy on Academic Disruption > I. Principles Regarding Disruptions of Academic Programs > B. Definitions"
+   ]
+  },
+  {
+   "id": "P6",
+   "group": "policy",
+   "seconds": 1.4,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Contact Information",
+    "[2] PC141 Tutorial Announcements (MyLS) > Introduction > Communication",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[4] PC141 Lab Announcements (MyLS) > Post lab 1 > LAB SYLLABUS > Lab Instructor Assistance (IA)",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[6] Procedures Relating to the Gendered and Sexual Violence Policy (12.4) > 3.0 Supports and Services > 3.3 Individuals who are Witnesses or Supporting Impacted Individuals",
+    "[7] 12.4 Gendered and Sexual Violence > 5.00 Policy (5.05–5.07)",
+    "[8] 12.4 Gendered and Sexual Violence > 5.00 Policy (5.08–5.10)"
+   ]
+  },
+  {
+   "id": "M1",
+   "group": "course",
+   "seconds": 1.4,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 4 Summary",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[4] PC141 Lab Manual: Estimation and Bounding > Appendix A: Reference Material > A.6 Quick Pre-Submission Checklist",
+    "[5] PC141 Lab Announcements (MyLS) > Post lab 1 > LATE SUBMISSION > Deduction for late submission",
+    "[6] Grades > Grading System",
+    "[7] Grades > Final Grade Appeals"
+   ]
+  },
+  {
+   "id": "M2",
+   "group": "course",
+   "seconds": 1.4,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 4 Summary",
+    "[2] PC141 Lab Syllabus (Fall 2026) > List of Labs",
+    "[3] PC141 Lab Manual: Estimation and Bounding > List of Tables",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.4 Less Familiar Comparison"
+   ]
+  },
+  {
+   "id": "M3",
+   "group": "course",
+   "seconds": 7.6,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 4 Summary",
+    "[2] PC141 Lab Manual: Estimation and Bounding > 1 Purpose",
+    "[3] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.2 Bounding",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 2 Introduction",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.4 Less Familiar Comparison",
+    "[6] Grades > Grading System"
+   ]
+  },
+  {
+   "id": "U1",
+   "group": "unanswerable",
+   "seconds": 1.4,
+   "pc141_retrieved": null,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 4 Summary",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > First Laboratory Session",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Description",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[6] Grades > Grading System"
+   ]
+  },
+  {
+   "id": "U2",
+   "group": "unanswerable",
+   "seconds": 1.3,
+   "pc141_retrieved": null,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > What to Bring to the First Lab",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Lab Format",
+    "[3] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Preparation for the First Lab",
+    "[4] PC141 Tutorial Announcements (MyLS) > Introduction",
+    "[5] PC141 Tutorial Announcements (MyLS) > Introduction > Preparation and Materials"
+   ]
+  },
+  {
+   "id": "U3",
+   "group": "unanswerable",
+   "seconds": 1.5,
+   "pc141_retrieved": null,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > What to Bring to the First Lab",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[4] PC141 Tutorial Announcements (MyLS) > Introduction > Digital Tools Policy",
+    "[5] PC141 Lab Announcements (MyLS) > Intro, Lab 1"
+   ]
+  },
+  {
+   "id": "U4",
+   "group": "unanswerable",
+   "seconds": 1.2,
+   "pc141_retrieved": null,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 5 Template",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Lab Format",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[4] PC141 Lab Announcements (MyLS) > Intro, Lab 1",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 4 Summary"
+   ]
+  },
+  {
+   "id": "U5",
+   "group": "unanswerable",
+   "seconds": 1.4,
+   "pc141_retrieved": null,
+   "laurier_retrieved": null,
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Introduction",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[3] PC141 Tutorial Announcements (MyLS) > Introduction > Communication",
+    "[4] PC141 Tutorial Announcements (MyLS) > Introduction > PC141 Tutorial Schedule — First class",
+    "[5] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Laboratory Schedule — First Lab Week (September 16)"
+   ]
+  }
+ ]
+}

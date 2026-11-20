@@ -1,0 +1,1343 @@
+{
+ "date": "2026-11-20",
+ "url": "https://wlu-rag-api.nobodyknownothing.workers.dev",
+ "summary": {
+  "PC141 section retrieved": "25/26",
+  "Laurier page retrieved": "17/17",
+  "Gives an answer (answerable questions)": "42/42",
+  "Cites the right PC141 section": "25/26",
+  "Cites the right Laurier page": "17/17",
+  "Says it can't verify (unanswerable questions)": "5/5",
+  "Statements whose quote checks out": "148/149",
+  "Median seconds per answer": 6.1
+ },
+ "rows": [
+  {
+   "id": "Q1",
+   "group": "course",
+   "seconds": 7.1,
+   "pc141_retrieved": false,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": false,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 2,
+   "verified": 2,
+   "answer": [
+    "In order-of-magnitude calculations, falling into a different cycle on a logarithmic scale indicates a wrong order of magnitude.",
+    "An order-of-magnitude calculation is intended to be \"within a factor of ten,\" meaning ten times the value should be clearly too large and one-tenth of the value should be clearly too small."
+   ],
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.5 Order of Magnitude Calculations > 3.5.3 When are Order of Magnitude Calculations used?",
+    "[2] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.5 Order of Magnitude Calculations",
+    "[3] PC141 Lab Manual: Estimation and Bounding > Recap",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.5 Order of Magnitude Calculations > 3.5.2 Illustration of Order of Magnitude Calculation",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.6 Logarithmic Scale"
+   ]
+  },
+  {
+   "id": "Q2",
+   "group": "course",
+   "seconds": 3.0,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 2,
+   "verified": 2,
+   "answer": [
+    "The range of possible values is defined as the difference between the upper and lower bounds.",
+    "The range is the difference between the upper and lower bounds."
+   ],
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.2 Bounding > 3.2.2 Range of Possible Values",
+    "[2] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.2 Bounding",
+    "[3] PC141 Lab Manual: Estimation and Bounding > Recap",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.7 Uncertainties",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.3 Familiar Comparisons > 3.3.1 Illustration of Comparison"
+   ]
+  },
+  {
+   "id": "Q3",
+   "group": "course",
+   "seconds": 6.3,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 2,
+   "verified": 2,
+   "answer": [
+    "If two numbers are within the same cycle of a logarithmic scale, they are within one order of magnitude of each other.",
+    "On a logarithmic scale, estimates that fall within the same cycle share the same order of magnitude."
+   ],
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.6 Logarithmic Scale",
+    "[2] PC141 Lab Manual: Estimation and Bounding > List of Figures",
+    "[3] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.6 Logarithmic Scale",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.2 Bounding > 3.2.2 Range of Possible Values",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.3 Familiar Comparisons"
+   ]
+  },
+  {
+   "id": "Q4",
+   "group": "course",
+   "seconds": 4.8,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 1,
+   "verified": 1,
+   "answer": [
+    "If a best estimate is not midway between the bounds, you can either choose ∆x = max{U−E, E−L} or adjust one bound to make the interval symmetric."
+   ],
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.7 Uncertainties",
+    "[2] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.3 Familiar Comparisons",
+    "[3] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.2 Bounding > 3.2.1 Picking Realistic Bounds",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.2 Bounding > 3.2.2 Range of Possible Values",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.3 Familiar Comparisons > 3.3.1 Illustration of Comparison"
+   ]
+  },
+  {
+   "id": "Q5",
+   "group": "course",
+   "seconds": 3.6,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 1,
+   "verified": 1,
+   "answer": [
+    "When using scientific notation, you should keep the value of 'a' in the range [1, 10)."
+   ],
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > Appendix A: Reference Material > A.2 Scientific Notation (Standard Form)",
+    "[2] PC141 Lab Manual: Estimation and Bounding > Appendix A: Reference Material > A.1 Significant Figures (SigFigs)",
+    "[3] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.5 Order of Magnitude Calculations",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.7 Uncertainties",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.5 Order of Magnitude Calculations > 3.5.2 Illustration of Order of Magnitude Calculation"
+   ]
+  },
+  {
+   "id": "Q6",
+   "group": "course",
+   "seconds": 6.1,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 3,
+   "verified": 3,
+   "answer": [
+    "The lab instructor is Dr. Shodiev and their email is hshodiev@wlu.ca.",
+    "The lab instructor's email is hshodiev@wlu.ca, and you should use your myLaurier webmail account only.",
+    "The tutorial instructor can be reached at hshodiev@wlu.ca using your myLaurier webmail account only."
+   ],
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Contact Information",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[3] PC141 Tutorial Announcements (MyLS) > Introduction > Communication",
+    "[4] PC141 Lab Announcements (MyLS) > Post lab 1 > LAB SYLLABUS > Lab Instructor Assistance (IA)",
+    "[5] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Office Hours",
+    "[6] Grades > Final Grade Appeals",
+    "[7] Grades > Final Grade Appeals",
+    "[8] Procedures Relating to Policy on University Closing Due to Severe Weather (7.6) > 4.0 In the Event the University or Individual Campus or Location Closes > 4.1 All in-person classes on the closed campus(es) or location(s) are cancelled."
+   ]
+  },
+  {
+   "id": "Q7",
+   "group": "course",
+   "seconds": 5.2,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 3,
+   "verified": 3,
+   "answer": [
+    "Students must bring a printed copy of the assigned lab manual, a calculator, and a lab notebook to every lab session.",
+    "For the first lab session, students should bring a paper copy of Chapter 1, a lab notebook, and a calculator.",
+    "Laboratory sessions are device-free environments where the use of cell phones, laptops, tablets, smart watches, or any electronic devices is not permitted; all devices must be turned off and stored away."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[2] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > What to Bring to the First Lab",
+    "[3] PC141 Tutorial Announcements (MyLS) > Introduction > Preparation and Materials",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Lab Format",
+    "[5] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Preparation for the First Lab",
+    "[6] Examinations > Examination Regulations for Candidates",
+    "[7] Student Regulations > Attendance",
+    "[8] Grades > Attendance"
+   ]
+  },
+  {
+   "id": "Q8",
+   "group": "course",
+   "seconds": 8.4,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 2,
+   "verified": 2,
+   "answer": [
+    "Students arriving more than 10 minutes late may not be admitted to labs and tutorials.",
+    "For Post lab 1, late submissions result in the following deductions: a 20% deduction for being 1 day late, a 40% deduction for being 2 days late, and a 60% deduction for being 3 days late."
+   ],
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Post lab 1 > LATE SUBMISSION > Deduction for late submission",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[5] PC141 Lab Manual: Estimation and Bounding > Appendix A: Reference Material > A.6 Quick Pre-Submission Checklist",
+    "[6] Examinations > Virtual Campus Courses: In-Person Midterms, In-Person Assessments, and In-Person Final Examinations Policy",
+    "[7] Examinations > Virtual Campus Courses: In-Person Midterms, In-Person Assessments, and In-Person Final Examinations Policy",
+    "[8] Faculty Petitions > Overview"
+   ]
+  },
+  {
+   "id": "Q9",
+   "group": "course",
+   "seconds": 6.2,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 4,
+   "verified": 4,
+   "answer": [
+    "If you miss a lab, you should email the instructor as soon as possible, preferably before the session. Follow-up regarding the missed lab will be handled in person during your next lab or tutorial session.",
+    "For absences due to illness, you must provide documentation from a licensed medical professional or a walk-in clinic. You should bring this required documentation with you to your next lab or tutorial session rather than sending sensitive medical information by email.",
+    "For short-term absences of less than one week due to being unwell, the Illness Self-Declaration Form can be used instead of medical documentation to request academic consideration. After submitting the form, you should follow up with your instructor regarding flexibility for missed coursework or participation.",
+    "Supporting medical documentation must include the dates and reasons you were examined, as well as the functional impact the illness has on attending class and learning. While the Laurier Verification of Illness Form is preferred, you should check with your faculty to see if other documentation, like an original medical certificate, is accepted. It is your responsibility to ensure all requested information is included on the documentation."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[5] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > What to Bring to the First Lab",
+    "[6] Managing Unexpected Academic Disruptions > Types of Short-Term Absences > Less Than One Week",
+    "[7] Academic Petitions and Appeals > Academic Petition Process > Documentation > Medical Documentation Expectations",
+    "[8] Policy 2.3 Academic Accommodation of Students with Disabilities > Definitions (6.00–7.00)"
+   ]
+  },
+  {
+   "id": "Q10",
+   "group": "course",
+   "seconds": 14.6,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 6,
+   "verified": 6,
+   "answer": [
+    "For lab grades, questions about grading must be raised within one week of a mark being posted, and no grade changes will be made after one week.",
+    "For lab grades, all lab and tutorial grades are finalized before the end of the term, and requests made after final exams will not be considered.",
+    "The policies for the tutorial portion of the course are the same as those for the laboratory portion unless otherwise stated.",
+    "Regarding tutorial grades, any concerns regarding marking or grade recording must be raised within one week of the work being marked, and no grade changes will be made after this period.",
+    "For final grade appeals, a request to review a grade with an instructor must be made no later than 10 business days after the grade is posted to LORIS (unofficial record of coursework) or no later than 10 business days after the start of the immediately following term, whichever is later.",
+    "A request for a final grade reassessment to the instructor may be submitted as soon as the final grade is posted to LORIS (unofficial record of coursework) but must be submitted no later than 10 business days after the start of the immediately following term or no later than 10 business days after the grade is posted (unofficial record of coursework), whichever is later."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Lab Announcements (MyLS) > Post lab 1",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Instructional Support During Tutorials",
+    "[5] PC141 Lab Announcements (MyLS) > Post lab 1 > Estimate the Olympic swimming pool problem",
+    "[6] Academic Petitions and Appeals > Types of Exceptions to University Undergraduate Academic Regulations > Final Grade Appeals > Step 1: Instructor",
+    "[7] Grades > Final Grade Appeals",
+    "[8] Academic Petitions and Appeals > Types of Exceptions to University Undergraduate Academic Regulations > Final Grade Appeals > Step 2: Chair"
+   ]
+  },
+  {
+   "id": "Q11",
+   "group": "course",
+   "seconds": 11.2,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 6,
+   "verified": 6,
+   "answer": [
+    "Laboratory sessions are device-free environments where the use of cell phones, laptops, tablets, smart watches, or any electronic devices is not permitted.",
+    "Students must bring a printed copy of the assigned lab manual, a calculator, and a lab notebook to lab.",
+    "Students who do not bring a printed lab manual or other required materials will receive a participation grade of -10 for that lab, which is a 10% deduction from the total mark for that specific lab session.",
+    "Printing or access issues, such as printer failure, last-minute printing, or location constraints, are not considered valid excuses for not bringing a printed lab manual.",
+    "In the event of illness, holidays, or unforeseen disruptions, alternate arrangements will be made.",
+    "While university policy permits the use of technology during class if used for educational purposes, individual instructors are permitted to establish guidelines for technology use during class and course assessments."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Introduction > Digital Tools Policy",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Lab Notebook",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Lab Format",
+    "[6] 9.3 Classroom Use of Electronic Devices > Policy (4.00)",
+    "[7] 9.3 Classroom Use of Electronic Devices > Definitions (2.00)",
+    "[8] 12.3 Non-Academic Student Code of Conduct > Related Policies, Procedures and Documents (7.17–7.18)"
+   ]
+  },
+  {
+   "id": "Q12",
+   "group": "course",
+   "seconds": 5.7,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 2,
+   "verified": 2,
+   "answer": [
+    "Students who do not bring a printed lab manual will receive a participation grade of -10 for that lab, which is a 10% deduction from the total mark for that specific lab session.",
+    "Issues with printing or accessing the manual, such as printer failure, last-minute printing, or location constraints, are not considered valid excuses."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Lab Format",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy"
+   ]
+  },
+  {
+   "id": "Q13",
+   "group": "course",
+   "seconds": 5.4,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 2,
+   "verified": 2,
+   "answer": [
+    "To be prepared for every tutorial, students should bring a scientific calculator, a notebook for short quizzes and handwritten problem solving, and their physics textbook and/or lecture notes.",
+    "The only permitted resources during tutorials are lecture notes, a printed course textbook, homework and tutorial notes, and a scientific calculator."
+   ],
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Introduction > Preparation and Materials",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[4] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > What to Bring to the First Lab",
+    "[5] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Preparation Expectations",
+    "[6] Gen AI Student Resource Hub > Gen AI and Academic Integrity > Follow Copyright",
+    "[7] Student Regulations > Attendance",
+    "[8] Grades > Attendance"
+   ]
+  },
+  {
+   "id": "Q14",
+   "group": "course",
+   "seconds": 9.1,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 4,
+   "verified": 4,
+   "answer": [
+    "Digital devices, including cell phones, laptops, tablets, and smart devices, are not permitted during tutorial sessions and must be turned off for the entire tutorial.",
+    "The policies for tutorials are the same as those for the laboratory portion unless otherwise stated.",
+    "The use of any resources other than a scientific calculator, printed course textbook, lecture notes, and homework and tutorial notes during a tutorial will result in a grade of zero for that week's tutorial report and may lead to more severe academic penalties.",
+    "Individual instructors are permitted to establish guidelines for technology use during class."
+   ],
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Introduction > Digital Tools Policy",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[5] PC141 Tutorial Announcements (MyLS) > Introduction > Preparation and Materials",
+    "[6] 9.3 Classroom Use of Electronic Devices > Policy (4.00)",
+    "[7] 9.3 Classroom Use of Electronic Devices > Definitions (2.00)"
+   ]
+  },
+  {
+   "id": "Q15",
+   "group": "course",
+   "seconds": 10.5,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 3,
+   "verified": 3,
+   "answer": [
+    "For the laboratory portion, you can email the Lab Instructor, Dr. Shodiev, at hshodiev@wlu.ca using only your myLaurier webmail account. Your subject line must include your course and lab section (for example, PC141 – Lab Section L02), as messages sent without this identification or sent outside MyLearningSpace may not receive a response.",
+    "For the tutorial portion, you can reach the instructor at hshodiev@wlu.ca using only your myLaurier webmail account. Do not send messages through MyLearningSpace. When emailing, you must include your course code and tutorial section in the subject line (for example, PC141 – Tutorial Section T02); emails without proper course and section identification may not receive a response.",
+    "All written communication with students is conducted through the official Laurier email address (@mylaurier.ca or @wlu.ca) or through a formal letter by mail."
+   ],
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Contact Information",
+    "[2] PC141 Tutorial Announcements (MyLS) > Introduction > Communication",
+    "[3] PC141 Lab Announcements (MyLS) > Post lab 1 > LAB SYLLABUS > Lab Instructor Assistance (IA)",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[5] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Office Hours",
+    "[6] Procedures for Student Code of Conduct: Academic Misconduct > Procedures for Investigation and Adjudication in Cases of Academic Misconduct",
+    "[7] Procedures for Undergraduate and Graduate Student Accommodations > Accommodation Planning (2.02–2.04)",
+    "[8] Procedures Relating to Policy on University Closing Due to Severe Weather (7.6) > 3.0 Communications"
+   ]
+  },
+  {
+   "id": "Q16",
+   "group": "course",
+   "seconds": 3.6,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 1,
+   "verified": 1,
+   "answer": [
+    "Office hours are held in Room R2089 on Thursdays from 4:00 pm to 6:00 pm."
+   ],
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Office Hours",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[3] PC141 Lab Announcements (MyLS) > Post lab 1 > LAB SYLLABUS > Lab Instructor Assistance (IA)",
+    "[4] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Contact Information",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[6] 2.5 Policy on Academic Disruption > II. Procedures > B. Short Disruptions",
+    "[7] Accessible Learning > Connect with Us",
+    "[8] Deferred Exams > Faculty-Specific Forms and Information > Faculty of Human and Social Sciences"
+   ]
+  },
+  {
+   "id": "Q17",
+   "group": "course",
+   "seconds": 3.6,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 1,
+   "verified": 1,
+   "answer": [
+    "The only resources allowed during the tutorial are a scientific calculator, the course textbook if it is printed, lecture notes, and homework and tutorial notes."
+   ],
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Open-Book Written Tutorial Report",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures",
+    "[5] PC141 Tutorial Announcements (MyLS) > Introduction",
+    "[6] 9.3 Classroom Use of Electronic Devices > Policy (4.00)"
+   ]
+  },
+  {
+   "id": "Q18",
+   "group": "course",
+   "seconds": 6.2,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 2,
+   "verified": 2,
+   "answer": [
+    "Any concerns regarding marking or grade recording for tutorials must be raised within one week of the work being marked.",
+    "The policies for the tutorial portion of the course are the same as those for the laboratory portion, unless otherwise stated."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Preparation Expectations",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[5] PC141 Tutorial Announcements (MyLS) > Introduction > Tutorial Component",
+    "[6] Grades > Final Grade Appeals",
+    "[7] Academic Petitions and Appeals > Types of Exceptions to University Undergraduate Academic Regulations > Final Grade Appeals > Step 1: Instructor",
+    "[8] Grades > Final Grade Appeals"
+   ]
+  },
+  {
+   "id": "Q19",
+   "group": "course",
+   "seconds": 6.4,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 2,
+   "verified": 2,
+   "answer": [
+    "Using unauthorized digital tools, online resources, or AI-based systems during a tutorial will result in a grade of zero for that week's tutorial report and may lead to more severe academic penalties.",
+    "Unauthorized aids or assistance, such as using an unauthorized electronic device or information source during a test or using a generative artificial intelligence tool to complete an assignment or test, is considered academic misconduct."
+   ],
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[2] PC141 Tutorial Announcements (MyLS) > Introduction > Digital Tools Policy",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Instructional Support During Tutorials",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[6] Policy 12.2 Student Code of Conduct: Academic Misconduct > 4.01 Academic Misconduct (4.02.03–4.02.07)",
+    "[7] Deferred Exams > Deferred Final Exams > Petitions on Other Grounds > Generative AI Tools & Deferred Examination Petition Submissions",
+    "[8] Academic Petitions and Appeals > Academic Petition Process > Generative AI Tools & Petition Submissions"
+   ]
+  },
+  {
+   "id": "E1",
+   "group": "email",
+   "seconds": 18.3,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "partial",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 5,
+   "verified": 5,
+   "answer": [
+    "Labs and tutorials begin the week of May 4, 2026.",
+    "Labs are held every week.",
+    "The sources conflict on how often laboratory sessions are held: the Lab Syllabus states they are held every week, but the Lab 1 announcement states they are held on alternate weeks.",
+    "Laboratory sessions are held in Room N2089, located on the second floor of the Science Building.",
+    "The specific date, day, and time of your lab depend on your registered section. The available sections for the first lab week are: \n- PC141–L01: Tuesday, September 22, 2:30 pm – 4:20 pm\n- PC141–L02: Tuesday, September 22, 4:30 pm – 6:20 pm\n- PC141–L03: Tuesday, September 22, 6:30 pm – 8:20 pm\n- PC141–L04: Wednesday, September 16, 8:30 am – 10:20 am\n- PC141–L05: Wednesday, September 16, 10:30 am – 12:20 pm\n- PC141–L06: Wednesday, September 16, 12:30 pm – 2:20 pm\n- PC141–L07: Wednesday, September 16, 2:30 pm – 4:20 pm\n- PC141–L08: Wednesday, September 16, 4:30 pm – 6:20 pm\n- PC141–L09: Wednesday, September 16, 6:30 pm – 8:20 pm\n- PC141–L10: Thursday, September 17, 2:30 pm – 4:20 pm\n- PC141–L11: Thursday, September 17, 4:30 pm – 6:20 pm"
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[2] PC141 Lab Announcements (MyLS) > Intro, Lab 1",
+    "[3] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Laboratory Schedule — First Lab Week (September 16)",
+    "[4] PC141 Lab Announcements (MyLS) > Post lab 1 > Estimate the Olympic swimming pool problem",
+    "[5] PC141 Lab Announcements (MyLS) > Post lab 1"
+   ]
+  },
+  {
+   "id": "E2",
+   "group": "email",
+   "seconds": 5.5,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 6,
+   "verified": 6,
+   "answer": [
+    "Attendance at all registered laboratory sessions is mandatory.",
+    "If you miss a lab, you should email the instructor as soon as possible, ideally before the scheduled session.",
+    "All follow-up regarding missed labs will be handled in person during your next lab or tutorial session.",
+    "Valid reasons for absence include illness (requiring documentation from a licensed medical professional or walk-in clinic), varsity athletics travel (requiring official confirmation from Athletics), or other circumstances with appropriate supporting documentation.",
+    "Please do not email sensitive medical information; instead, bring the required documentation to your next lab or tutorial session.",
+    "Approved make-up labs must be arranged within one week, though this is subject to laboratory safety constraints and section capacity."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[4] PC141 Lab Announcements (MyLS) > Post lab 1 > LATE SUBMISSION > Deduction for late submission",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[6] Student Regulations > Attendance",
+    "[7] Examinations > Examination Regulations for Candidates",
+    "[8] Grades > Attendance"
+   ]
+  },
+  {
+   "id": "E3",
+   "group": "email",
+   "seconds": 6.4,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 3,
+   "verified": 3,
+   "answer": [
+    "You should submit an electronic version of the post-lab question through the Lab1 folder in the MyLearningSpace Dropbox.",
+    "During lab sessions, you must upload assigned pre-lab and post-lab assignments to MyLearningSpace.",
+    "If the university or a location closes due to severe weather, deadlines for assignments submitted virtually, such as through MyLearningSpace, remain unchanged and are due at the originally scheduled time."
+   ],
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Post lab 1",
+    "[2] PC141 Lab Announcements (MyLS) > Post lab 1 > Estimate the Olympic swimming pool problem",
+    "[3] PC141 Tutorial Announcements (MyLS) > Introduction > Communication",
+    "[4] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Contact Information",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Lab Format",
+    "[6] Procedures Relating to Policy on University Closing Due to Severe Weather (7.6) > 4.0 In the Event the University or Individual Campus or Location Closes > 4.1 All in-person classes on the closed campus(es) or location(s) are cancelled."
+   ]
+  },
+  {
+   "id": "E4",
+   "group": "email",
+   "seconds": 18.8,
+   "pc141_retrieved": true,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 14,
+   "verified": 14,
+   "answer": [
+    "For labs, work must be completed individually, though groups are permitted to share only raw data.",
+    "Examples of plagiarism in labs include copying calculations, derivations, or lists from another student, or using wording that is identical or nearly identical in reports.",
+    "Plagiarism in labs results in a grade of zero on the affected lab and a referral to the course instructor and the University’s Academic Integrity process.",
+    "To avoid plagiarism in labs, students should write from their own understanding and in their own words.",
+    "The policies for the tutorial portion of the course are the same as the laboratory portion unless stated otherwise.",
+    "In tutorials, all submitted reports must be your own independent work.",
+    "In tutorials, copying, transcribing, reproducing, or copying another student's work, in whole or in part, is considered academic dishonesty.",
+    "Cheating in tutorials will be handled according to the University’s Academic Integrity Policy and may lead to disciplinary action.",
+    "Tutorial reports, which are typically written and completed in-class, must reflect a student's own independent work and reasoning.",
+    "Academic misconduct includes academic dishonesty, fraud, misconduct, and failure to respect the rights of others. A student's intention to commit misconduct is not relevant to a finding of misconduct, and hurried or careless submissions do not excuse a student from the responsibility of verifying academic integrity.",
+    "Plagiarism is defined as the unacknowledged presentation of the work of others, in whole or in part, as one's own in forms such as reports, assignments, examinations, theses, or dissertations.",
+    "Plagiarism involves passing off the thoughts, ideas, or writings of another person as your own, which includes using the words of others without proper citation or taking credit for ideas that are not your own.",
+    "Self-plagiarism is the act of submitting the same piece of work for more than one course without permission from the instructor; students are not allowed to receive course credit for the same work twice.",
+    "Cheating or copying involves the attempt to use, give, receive, or use unauthorized information during an examination (in oral or written form), or copying/allowing someone else to copy an essay, report, or examination."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Open-Book Written Tutorial Report",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures",
+    "[5] PC141 Tutorial Announcements (MyLS) > Introduction > Digital Tools Policy",
+    "[6] Policy 12.2 Student Code of Conduct: Academic Misconduct > 4.01 Academic Misconduct (4.02–4.02.02)",
+    "[7] Academic Misconduct Defined > Types of Academic Misconduct > Plagiarism",
+    "[8] Academic Misconduct Defined > Types of Academic Misconduct > Self-Plagiarism"
+   ]
+  },
+  {
+   "id": "L1",
+   "group": "laurier",
+   "seconds": 13.1,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 6,
+   "verified": 6,
+   "answer": [
+    "If you know of a conflict in advance, you must submit a request for a deferred final examination as soon as possible and at least seven calendar days before the last day of classes for the term.",
+    "If a conflict arises later, the petition must be submitted as soon as possible.",
+    "For unforeseen circumstances occurring on the day of the examination, requests should be submitted as soon as possible and no later than three business days after the scheduled date of the examination.",
+    "To receive relief for having three exams within a 24-hour period, you must submit a petition for a deferred exam through the Faculty responsible for the second course in the sequence. The deadline to submit the form is at least 7 calendar days before the final day of classes of the term.",
+    "If two or more exams are scheduled to take place simultaneously, you must complete the Final Exam Conflict Form at least 7 calendar days before the final day of classes of the term.",
+    "Requests for simultaneous exams submitted after the deadline can be submitted as a deferred exam petition to the appropriate Petitions Committee."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Lab Manual: Estimation and Bounding > Appendix A: Reference Material > A.6 Quick Pre-Submission Checklist",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Learning Outcomes",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.4 Less Familiar Comparison",
+    "[6] Deferred Exams > Deferred Final Exams > Petitions on Other Grounds",
+    "[7] Deferred Exams > Deferred Final Exams > Three Exams Within 24 Hours",
+    "[8] Examinations > Final University Examinations"
+   ]
+  },
+  {
+   "id": "L2",
+   "group": "laurier",
+   "seconds": 7.3,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 6,
+   "verified": 6,
+   "answer": [
+    "In the laboratory, plagiarism includes using identical or nearly identical wording in reports, or copying lists, derivations, or calculations from another student.",
+    "In tutorials, copying, reproducing, or transcribing another student's work, either in whole or in part, is considered academic dishonesty.",
+    "Using resources in tutorials other than a scientific calculator, a printed course textbook, lecture notes, or homework and tutorial notes will result in a grade of zero for that week's tutorial report and may lead to more severe academic penalties.",
+    "Academic misconduct is defined in the Student Code of Conduct and Discipline as an act by a student (or students on a team project) that may result in a false evaluation or represents an attempt to unfairly gain an academic advantage, where the student knew or ought reasonably to have known it was misconduct. Intent is not relevant to a finding of academic misconduct.",
+    "Examples of academic misconduct include, but are not limited to: plagiarism, cheating, submitting the same work for multiple courses without instructor permission, impersonating someone in a test or exam, unauthorized collaboration on individual assignments, tests or exams, buying or obtaining term papers or assignments, and falsifying, misrepresenting, or forging an academic record or supporting document.",
+    "Forging doctor's notes is considered academic misconduct. Additionally, changing, omitting, or forging materials submitted to the university during the program application process can result in the revocation of an offer of admission."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[5] PC141 Lab Manual: Estimation and Bounding > Recap",
+    "[6] Academic Misconduct Defined > Academic Misconduct",
+    "[7] Academic Misconduct Defined > Types of Academic Misconduct > Falsifying, Misrepresenting or Forging an Academic Record or Supporting Document",
+    "[8] 12.4 Gendered and Sexual Violence > 3.00 Definitions (3.10–3.14)"
+   ]
+  },
+  {
+   "id": "L3",
+   "group": "laurier",
+   "seconds": 4.9,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 2,
+   "verified": 2,
+   "answer": [
+    "The last day to drop a course without academic failure for the Fall term 2026 is December 9, 2026.",
+    "The final day to drop a course without failure is the last day of class of the term, which is identified in the academic dates as the \"Classes End\" date."
+   ],
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Post lab 1 > LATE SUBMISSION > Deduction for late submission",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Office Hours",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Learning Outcomes",
+    "[5] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Laboratory Schedule — First Lab Week (September 16)",
+    "[6] Adding and Dropping Courses > Overview",
+    "[7] Adding and Dropping Courses > Overview",
+    "[8] Academic & Related Dates: Fall Term 2026 (12-week courses) > December, 2026"
+   ]
+  },
+  {
+   "id": "L4",
+   "group": "laurier",
+   "seconds": 9.3,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 6,
+   "verified": 6,
+   "answer": [
+    "Students requesting accommodation should register with the Accessible Learning Centre (ALC) after accepting their university offer of admission.",
+    "Current students who suspect a disability is impacting their academic performance are encouraged to contact the Accessible Learning Centre.",
+    "Returning students who have already registered with the ALC are expected to register online at the start of each academic year.",
+    "Students who require academic accommodations are responsible for self-identifying their needs to the Accessible Learning Centre (ALC).",
+    "New students are encouraged to contact the ALC once they accept their offer of admission.",
+    "Returning students are expected to register with the ALC at the beginning of each academic year."
+   ],
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy",
+    "[6] Policy 2.3 Academic Accommodation of Students with Disabilities > Policy > Responsibility of Students (20.00)",
+    "[7] Policy 2.3 Academic Accommodation of Students with Disabilities > Definitions (6.00–7.00)",
+    "[8] Procedures for Undergraduate and Graduate Student Accommodations > Accommodation Planning (1.00–2.01)"
+   ]
+  },
+  {
+   "id": "L5",
+   "group": "laurier",
+   "seconds": 2.4,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 1,
+   "verified": 1,
+   "answer": [
+    "ChatGPT has not been approved by Laurier through the same review processes as Microsoft Copilot."
+   ],
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Introduction > Digital Tools Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.3 Familiar Comparisons",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.3 Familiar Comparisons > 3.3.1 Illustration of Comparison",
+    "[6] Gen AI Student Resource Hub > Which Tools Should I Use at Laurier?",
+    "[7] Deferred Exams > Deferred Final Exams > Petitions on Other Grounds > Generative AI Tools & Deferred Examination Petition Submissions",
+    "[8] Academic Petitions and Appeals > Academic Petition Process > Generative AI Tools & Petition Submissions"
+   ]
+  },
+  {
+   "id": "L6",
+   "group": "laurier",
+   "seconds": 13.0,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 5,
+   "verified": 5,
+   "answer": [
+    "If you miss a lab session, you should email the instructor as soon as possible, preferably before the session, and bring required documentation to your next lab or tutorial session.",
+    "The policies for tutorials are the same as the laboratory portion, unless stated otherwise: if you miss a tutorial, email the instructor once before the session when possible and bring documentation to your next lab or tutorial.",
+    "For short-term absences of less than one week due to illness, students can use the Illness Self-Declaration Form instead of medical documentation to request academic consideration. After submitting the form, students should follow up with their instructor regarding flexibility for coursework, missed midterms, or class participation.",
+    "Supporting medical documentation should include the dates and reasons for the examination and the functional impact of the illness on learning and attendance. While the Laurier Verification of Illness Form is preferred, students should check with their faculty regarding the acceptance of alternate documentation like an original medical certificate.",
+    "If a faculty member requests a medical excuse slip, students must be examined by a WLU Health Services staff member or a qualified off-campus physician at the time of the illness."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[4] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Contact Information",
+    "[5] PC141 Tutorial Announcements (MyLS) > Introduction > Preparation and Materials",
+    "[6] Managing Unexpected Academic Disruptions > Types of Short-Term Absences > Less Than One Week",
+    "[7] Academic Petitions and Appeals > Academic Petition Process > Documentation > Medical Documentation Expectations",
+    "[8] Student Regulations > Medical Excuse Slips"
+   ]
+  },
+  {
+   "id": "L7",
+   "group": "laurier",
+   "seconds": 49.9,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 7,
+   "verified": 7,
+   "answer": [
+    "If you believe your work was graded incorrectly during the term, you should follow the instructions in the syllabus. For lab grades, you must raise questions within one week of a mark being posted, contact your section Instructional Assistant (IA) first, and if the issue is not resolved, contact the Lab Coordinator. No grade changes will be made after one week. All lab and tutorial grades are finalized before the end of the term, and requests made after final exams will not be considered.",
+    "For tutorial grades, concerns regarding marking or grade recording must be raised within one week of the work being marked. You should contact your section IA first before contacting the instructor. No grade changes will be made after this period.",
+    "The course instructor is primarily responsible for assigning the final grade. The final grade appeal process is for concerns regarding the calculation of grades and/or the application of grading criteria to submitted work. It is not for requests for relief from personal circumstances affecting academic performance, course structure, or course policy. If the syllabus does not provide a process for addressing incorrect grades, you should promptly raise the issue with the instructor. There are 4 sequential steps in the appeal process, and a student may submit only one grade appeal per course section.",
+    "Step 1 of the grade appeal process is the Instructor.",
+    "In Step 2, the chair notifies the instructor of the outcome and provides reassessed grades to the associate dean for final grade revision. The grade appeal decision (higher, lower, or unchanged) is the final grade. The chair will notify the student of the outcome via their Laurier email account, with Enrolment Services copied.",
+    "In Step 3, a student may submit a petition to the faculty offering the course no later than 10 business days after receiving the chair's decision. The petition should not include grounds or information not previously presented to the chair. If the faculty petitions committee denies the petition, a grade appeal fee will be applied to the student's account.",
+    "In Step 4, a student may appeal a decision from the Faculty Petitions Committee to the Senate Student Appeals Committee. This appeal must be submitted within 10 business days of receiving the decision from the Faculty Petitions Committee. If the Senate Student Appeals Committee rules in the student's favor, the grade appeal fee from the Petitions Committee will be refunded; if the appeal is denied, an additional grade appeal fee will be applied to the student's account."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[4] PC141 Lab Manual: Estimation and Bounding > Appendix A: Reference Material > A.6 Quick Pre-Submission Checklist",
+    "[5] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[6] Academic Petitions and Appeals > Types of Exceptions to University Undergraduate Academic Regulations > Final Grade Appeals > This is a simplified version of the procedure. Consult the Undergraduate Academic Calendar for the full procedure.",
+    "[7] Grades > Final Grade Appeals",
+    "[8] Grades > Final Grade Appeals"
+   ]
+  },
+  {
+   "id": "L8",
+   "group": "laurier",
+   "seconds": 4.4,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 1,
+   "verified": 1,
+   "answer": [
+    "Fall Reading Week is from October 13 to October 16, 2026, and there are no classes."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[4] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Laboratory Schedule — First Lab Week (September 16)",
+    "[5] PC141 Tutorial Announcements (MyLS) > Introduction",
+    "[6] Academic & Related Dates: Fall Term 2026 (12-week courses) > October, 2026",
+    "[7] Academic & Related Dates: Fall Term 2026 (12-week courses) > November, 2026",
+    "[8] Academic & Related Dates: Winter Term 2027 (12-week courses) > July, 2026"
+   ]
+  },
+  {
+   "id": "L9",
+   "group": "laurier",
+   "seconds": 18.4,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "partial",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 10,
+   "verified": 9,
+   "answer": [
+    "Students are not required to complete more than two final examinations in a 24 hour period.",
+    "(unverified) To receive relief from the rule regarding three exams in 24 hours, the third scheduled examination must start and finish within 24 hours of the beginning of the first examination.",
+    "To receive relief, students must complete the Final Exam Conflict Form at least seven calendar days before the final day of classes of the term.",
+    "The university reserves the right to select which examination is rescheduled.",
+    "Approved requests will have an exam scheduled to a different day and time within the examination period.",
+    "Requests submitted after the deadline can be submitted as a deferred exam petition to the appropriate Petitions Committee. If approved, the exam will be scheduled during the deferred exam period and a non-refundable deferred examination fee will be applied. The university reserves the right to select which examination is to be deferred.",
+    "For Lazaridis School of Business and Economics students, if three final exams are scheduled such that the third examination finishes within 24 hours of the beginning of the first examination, a deferral petition may be submitted at least three business days before the first of the three final examinations. In this case, the middle exam will be considered for deferral.",
+    "Students are not normally required to complete more than two final examinations in a 24-hour period. To receive relief, the third problematic exam must finish within 24 hours of the beginning of the first. The deadline to submit the form is at least 7 calendar days before the final day of classes of the term.",
+    "For these types of requests, students should submit a petition for a deferred exam through the Faculty responsible for the second course in the sequence.",
+    "Deferred exam requests of this type are exempt from the deferred examination fee and do not count toward a student’s maximum allowable deferred exams."
+   ],
+   "unverified_claims": [
+    {
+     "text": "To receive relief from the rule regarding three exams in 24 hours, the third scheduled examination must start and finish within 24 hours of the beginning of the first examination.",
+     "quote": "In order to receive relief under this rule, the third scheduled examination must start and finish within 24 hours of the beginning of the first examination.",
+     "issue": "\"3\" not found in the cited section"
+    }
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Schedule",
+    "[4] PC141 Lab Announcements (MyLS) > Post lab 1 > LATE SUBMISSION > Deduction for late submission",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Lab Format",
+    "[6] Deferred Exams > Faculty-Specific Forms and Information > Lazaridis School of Business and Economics > Three Exams Within 24 Hours",
+    "[7] Examinations > Final University Examinations",
+    "[8] Deferred Exams > Deferred Final Exams > Three Exams Within 24 Hours"
+   ]
+  },
+  {
+   "id": "L10",
+   "group": "laurier",
+   "seconds": 16.2,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 6,
+   "verified": 6,
+   "answer": [
+    "For a first offence with no prior record, the Relevant Administrator determines the penalty after consulting with the instructor and allowing the student to present additional evidence.",
+    "Penalties for a first offence may include a grade deduction or receiving a zero for an assignment, project, test, exam, or other activity that counts toward the final course grade.",
+    "The most severe penalty that can be assigned by the Relevant Administrator is failure in the course; any other additional penalty requires a recommendation to the Dean.",
+    "Students will be notified of the penalty within ten (10) working days after the five (5) day response period ends.",
+    "A student may appeal to the Faculty Petitions Committee within ten (10) working days of receiving the Final Notice of Penalty document, and the decision of this committee is final and binding.",
+    "When determining penalties for academic misconduct, several factors may be considered, including the relative weight of the assignment, the student's academic experience, extenuating circumstances, previous offences in the Central Registry, aggravating factors, and the severity of the offence and its impact on the Laurier community. For graduate students, the work's importance to their graduate program is also considered."
+   ],
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Post lab 1 > LATE SUBMISSION > Deduction for late submission",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[6] Policy 12.2 Student Code of Conduct: Academic Misconduct > 4.04 Penalties for Academic Misconduct (4.04.02–4.04.03)",
+    "[7] Procedures for Student Code of Conduct: Academic Misconduct > 6.0 Subsequent (Second or Greater) Offence of Academic Misconduct: Application of Penalty",
+    "[8] Procedures for Student Code of Conduct: Academic Misconduct > 5.0 First Offence of Academic Misconduct: Application of Penalty"
+   ]
+  },
+  {
+   "id": "P1",
+   "group": "policy",
+   "seconds": 5.5,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 2,
+   "verified": 2,
+   "answer": [
+    "The purpose of the Non-Academic Student Code of Conduct Policy is to establish the University's expectations for how students behave in non-academic settings and to describe how Laurier will address non-academic misconduct.",
+    "The Non-Academic Student Code of Conduct is a tool used to maintain a learning-centered, positive, and respectful environment."
+   ],
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[4] PC141 Tutorial Announcements (MyLS) > Introduction > Communication",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[6] 12.3 Non-Academic Student Code of Conduct > 1.00 Preamble (1.01–1.02)",
+    "[7] 12.3 Non-Academic Student Code of Conduct > 2.00 Purpose (2.01–2.02)",
+    "[8] 10.2 Appendix A: Documents Included in the Student Academic Record and Official Academic Transcript > 3.0. Procedure > 3.1. Information included in the Student Academic Record"
+   ]
+  },
+  {
+   "id": "P2",
+   "group": "policy",
+   "seconds": 5.5,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 2,
+   "verified": 2,
+   "answer": [
+    "The purpose of the Student Mental Health Policy is to support student mental health by providing clear pathways to care and resources.",
+    "Wilfrid Laurier University is committed to fostering student well-being across the entire university and adopts a holistic approach to mental health care that emphasizes inclusivity and a supportive culture."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[5] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[6] 12.5 Student Mental Health Policy > 1.00 Purpose (1.01–1.02)",
+    "[7] 12.5 Student Mental Health Policy > 11.00 Community of Care (11.01)",
+    "[8] Procedures for Student Mental Health Policy (12.5) > 3.0 Receipt of a Report"
+   ]
+  },
+  {
+   "id": "P3",
+   "group": "policy",
+   "seconds": 5.4,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 3,
+   "verified": 3,
+   "answer": [
+    "Individual instructors are permitted to establish Guidelines for Technology use During Class and During Course Assessments.",
+    "Instructors are required to make explicit on course syllabi Guidelines for Technology use During Class and During Course Assessments.",
+    "Guidelines for technology use may include cell phone guidelines and restrictions."
+   ],
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Introduction > Digital Tools Policy",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[5] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Contact Information",
+    "[6] 9.3 Classroom Use of Electronic Devices > Policy (4.00)",
+    "[7] 9.3 Classroom Use of Electronic Devices > Policy > Obligations of Instructor",
+    "[8] 12.3 Non-Academic Student Code of Conduct > Related Policies, Procedures and Documents (7.17–7.18)"
+   ]
+  },
+  {
+   "id": "P4",
+   "group": "policy",
+   "seconds": 10.7,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 1,
+   "verified": 1,
+   "answer": [
+    "Information included in the Student Academic Record consists of: \n• Application for admission\n• Laurier identification number\n• Biographical information\n• Correspondence considered pertinent to the adjudication of applicants including letters of support and the applicant background summary form\n• Transcripts of prior academic activity, including exchange and letter of permission transcripts\n• Grades\n• Performance data (progression, petitions decisions impacting the student file, inactive status)\n• Advanced standing, transfer credit(s)\n• Academic status and graduation data\n• Offer of admission (for undergraduate students only) and permit to register\n• Registration, course change request, and withdrawal forms, letters of permission\n• Sanctions imposed for academic or non-academic disciplinary purposes\n• Scholarship, financial support, and billing information (data, type, and amount including amounts owed)\n• Other information as deemed appropriate."
+   ],
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[2] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > What to Bring to the First Lab",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 5 Template",
+    "[5] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[6] 10.2 Appendix A: Documents Included in the Student Academic Record and Official Academic Transcript > 3.0. Procedure > 3.1. Information included in the Student Academic Record",
+    "[7] 10.2 Student Academic Record > 4.00 Policy > 4.05 Third Party Access to the Student Academic Record",
+    "[8] Examinations > Virtual Campus Courses: In-Person Midterms, In-Person Assessments, and In-Person Final Examinations Policy"
+   ]
+  },
+  {
+   "id": "P5",
+   "group": "policy",
+   "seconds": 9.4,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 6,
+   "verified": 6,
+   "answer": [
+    "A Disruption is defined as occurring when academic activities are substantially interrupted or impeded due to causes such as natural disasters, health emergencies, non-Wilfrid Laurier University labour disputes, or other like causes.",
+    "Academic activity includes any work necessary for a student to meet course or program requirements or any work subject to evaluation.",
+    "To determine if an interruption is \"substantial\", factors such as the duration and timing of the Disruption, the impact on attendance, the availability of resources, and the impact on the timing and sequence of evaluations (like examinations, assignments, and practica) are considered.",
+    "Disruptions lasting no more than seven consecutive days are generally considered short Disruptions and will be governed by normal academic regulations where reasonably possible.",
+    "For short Disruptions, individual departments or faculties determine how much a course, lab, or seminar has been affected and what remedial action is needed. If an instructor is absent, the Department Chair, Area Head, Co-ordinator, or a designate will make changes to course procedures in consultation with the Dean.",
+    "If a course instructor believes remedial action should include rescheduling missed contact hours (such as labs or lectures) to maintain course integrity, they may take action in consultation with the Office of the Registrar and their Department Chair, Area Head, Co-ordinator, or designate."
+   ],
+   "sources": [
+    "[1] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Plagiarism Policy",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Academic Integrity in Tutorials",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Permitted Resources",
+    "[5] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[6] 2.5 Policy on Academic Disruption > II. Procedures > B. Short Disruptions",
+    "[7] Managing Unexpected Academic Disruptions > Types of Short-Term Absences > More Than Two Weeks",
+    "[8] 2.5 Policy on Academic Disruption > I. Principles Regarding Disruptions of Academic Programs > B. Definitions"
+   ]
+  },
+  {
+   "id": "P6",
+   "group": "policy",
+   "seconds": 13.1,
+   "pc141_retrieved": null,
+   "laurier_retrieved": true,
+   "status": "answered",
+   "pc141_cited": null,
+   "laurier_cited": true,
+   "answered": true,
+   "refused": null,
+   "claims": 4,
+   "verified": 4,
+   "answer": [
+    "The University is committed to responding to Complaints of Gendered and Sexual Violence fairly and expeditiously, with a commitment to procedural fairness and the respectful treatment of all individuals involved.",
+    "During an investigation process, university staff or internal/external investigators will not ask students who make a Disclosure or Complaint, or seek supports and services, irrelevant questions, including those regarding the student's past sexual history or sexual expression.",
+    "Laurier offers on-campus supports and allows Survivors to choose different off-campus supports based on their needs, such as 2SLGBTQIA supports, faith or culturally based counselling, or elders.",
+    "To disclose Gendered or Sexual Violence, seek accommodations, or learn about complaint and informal intervention options, students may email svinfo.wlu.ca or phone 548-889-3517 to contact the Office of Human Rights and Conflict Management."
+   ],
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Contact Information",
+    "[2] PC141 Tutorial Announcements (MyLS) > Introduction > Communication",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[4] PC141 Lab Announcements (MyLS) > Post lab 1 > LAB SYLLABUS > Lab Instructor Assistance (IA)",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[6] Procedures Relating to the Gendered and Sexual Violence Policy (12.4) > 3.0 Supports and Services > 3.3 Individuals who are Witnesses or Supporting Impacted Individuals",
+    "[7] 12.4 Gendered and Sexual Violence > 5.00 Policy (5.05–5.07)",
+    "[8] 12.4 Gendered and Sexual Violence > 5.00 Policy (5.08–5.10)"
+   ]
+  },
+  {
+   "id": "M1",
+   "group": "course",
+   "seconds": 4.3,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 2,
+   "verified": 2,
+   "answer": [
+    "For the Estimation and Bounding lab, the marking scheme is: In-lab Questions (40%), In-lab Tasks (40%), and Post-lab Tasks (20%).",
+    "Tutorial grades are determined out of 100% based on the weighting specified in the course outline."
+   ],
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 4 Summary",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Grade Review and Inquiry Policy",
+    "[3] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[4] PC141 Lab Manual: Estimation and Bounding > Appendix A: Reference Material > A.6 Quick Pre-Submission Checklist",
+    "[5] PC141 Lab Announcements (MyLS) > Post lab 1 > LATE SUBMISSION > Deduction for late submission",
+    "[6] Grades > Grading System",
+    "[7] Grades > Final Grade Appeals"
+   ]
+  },
+  {
+   "id": "M2",
+   "group": "course",
+   "seconds": 2.9,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 1,
+   "verified": 1,
+   "answer": [
+    "For the Estimation and Bounding lab, the in-lab tasks are worth 40%."
+   ],
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 4 Summary",
+    "[2] PC141 Lab Syllabus (Fall 2026) > List of Labs",
+    "[3] PC141 Lab Manual: Estimation and Bounding > List of Tables",
+    "[4] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.4 Less Familiar Comparison"
+   ]
+  },
+  {
+   "id": "M3",
+   "group": "course",
+   "seconds": 2.7,
+   "pc141_retrieved": true,
+   "laurier_retrieved": null,
+   "status": "answered",
+   "pc141_cited": true,
+   "laurier_cited": null,
+   "answered": true,
+   "refused": null,
+   "claims": 1,
+   "verified": 1,
+   "answer": [
+    "For the Estimation and Bounding lab, the marking scheme is as follows: In-lab Questions are worth 40%, In-lab Tasks are worth 40%, and Post-lab Tasks are worth 20%. Pre-lab Questions, Pre-lab Tasks, and Post-lab Questions are worth 0%."
+   ],
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 4 Summary",
+    "[2] PC141 Lab Manual: Estimation and Bounding > 1 Purpose",
+    "[3] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.2 Bounding",
+    "[4] PC141 Lab Manual: Estimation and Bounding > 2 Introduction",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 3 Theory and Procedure > 3.4 Less Familiar Comparison",
+    "[6] Grades > Grading System"
+   ]
+  },
+  {
+   "id": "U1",
+   "group": "unanswerable",
+   "seconds": 2.1,
+   "pc141_retrieved": null,
+   "laurier_retrieved": null,
+   "status": "not_found",
+   "pc141_cited": null,
+   "laurier_cited": null,
+   "answered": null,
+   "refused": true,
+   "claims": 0,
+   "verified": 0,
+   "answer": "PC141 final exam weighting",
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 4 Summary",
+    "[2] PC141 Tutorial Announcements (MyLS) > Tutorial Policies and Procedures > Attendance and Grading Policies",
+    "[3] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > First Laboratory Session",
+    "[4] PC141 Lab Syllabus (Fall 2026) > Description",
+    "[5] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[6] Grades > Grading System"
+   ]
+  },
+  {
+   "id": "U2",
+   "group": "unanswerable",
+   "seconds": 2.5,
+   "pc141_retrieved": null,
+   "laurier_retrieved": null,
+   "status": "not_found",
+   "pc141_cited": null,
+   "laurier_cited": null,
+   "answered": null,
+   "refused": true,
+   "claims": 0,
+   "verified": 0,
+   "answer": "Which edition of the textbook is required",
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > What to Bring to the First Lab",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Lab Format",
+    "[3] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Preparation for the First Lab",
+    "[4] PC141 Tutorial Announcements (MyLS) > Introduction",
+    "[5] PC141 Tutorial Announcements (MyLS) > Introduction > Preparation and Materials"
+   ]
+  },
+  {
+   "id": "U3",
+   "group": "unanswerable",
+   "seconds": 1.8,
+   "pc141_retrieved": null,
+   "laurier_retrieved": null,
+   "status": "not_found",
+   "pc141_cited": null,
+   "laurier_cited": null,
+   "answered": null,
+   "refused": true,
+   "claims": 0,
+   "verified": 0,
+   "answer": "The sources found do not answer this question.",
+   "sources": [
+    "[1] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > What to Bring to the First Lab",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Digital Devices & Participation Policy",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[4] PC141 Tutorial Announcements (MyLS) > Introduction > Digital Tools Policy",
+    "[5] PC141 Lab Announcements (MyLS) > Intro, Lab 1"
+   ]
+  },
+  {
+   "id": "U4",
+   "group": "unanswerable",
+   "seconds": 1.7,
+   "pc141_retrieved": null,
+   "laurier_retrieved": null,
+   "status": "not_found",
+   "pc141_cited": null,
+   "laurier_cited": null,
+   "answered": null,
+   "refused": true,
+   "claims": 0,
+   "verified": 0,
+   "answer": "The sources found do not answer this question.",
+   "sources": [
+    "[1] PC141 Lab Manual: Estimation and Bounding > 5 Template",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Lab Format",
+    "[3] PC141 Lab Syllabus (Fall 2026) > Requirements and Policies > Attendance and Makeup Policy",
+    "[4] PC141 Lab Announcements (MyLS) > Intro, Lab 1",
+    "[5] PC141 Lab Manual: Estimation and Bounding > 4 Summary"
+   ]
+  },
+  {
+   "id": "U5",
+   "group": "unanswerable",
+   "seconds": 1.9,
+   "pc141_retrieved": null,
+   "laurier_retrieved": null,
+   "status": "not_found",
+   "pc141_cited": null,
+   "laurier_cited": null,
+   "answered": null,
+   "refused": true,
+   "claims": 0,
+   "verified": 0,
+   "answer": "The sources found do not answer this question.",
+   "sources": [
+    "[1] PC141 Tutorial Announcements (MyLS) > Introduction",
+    "[2] PC141 Lab Syllabus (Fall 2026) > Header",
+    "[3] PC141 Tutorial Announcements (MyLS) > Introduction > Communication",
+    "[4] PC141 Tutorial Announcements (MyLS) > Introduction > PC141 Tutorial Schedule — First class",
+    "[5] PC141 Lab Announcements (MyLS) > Intro, Lab 1 > Laboratory Schedule — First Lab Week (September 16)"
+   ]
+  }
+ ]
+}

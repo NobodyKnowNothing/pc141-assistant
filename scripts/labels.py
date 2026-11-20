@@ -50,6 +50,11 @@ SCHEMA = {
 }
 
 
+def api_headers(token):
+    # Cloudflare blocks Python-urllib's default user agent.
+    return {"Authorization": f"Bearer {token}", "Content-Type": "application/json", "User-Agent": "pc141-build/1.0"}
+
+
 def credentials():
     """(API token, account id) for the Cloudflare REST API."""
     token, account = os.environ.get("CLOUDFLARE_API_TOKEN"), os.environ.get("CLOUDFLARE_ACCOUNT_ID")
@@ -59,7 +64,7 @@ def credentials():
             config = Path.home() / ".config" / ".wrangler" / "config" / "default.toml"
         token = re.search(r'oauth_token\s*=\s*"([^"]+)"', config.read_text()).group(1)
     if not account:
-        req = urllib.request.Request("https://api.cloudflare.com/client/v4/accounts", headers={"Authorization": f"Bearer {token}"})
+        req = urllib.request.Request("https://api.cloudflare.com/client/v4/accounts", headers=api_headers(token))
         account = json.load(urllib.request.urlopen(req))["result"][0]["id"]
     return token, account
 
@@ -89,7 +94,7 @@ def label(token, account, chunk, doc_outline):
     req = urllib.request.Request(
         f"https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/{MODEL}",
         data=json.dumps(body).encode(),
-        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+        headers=api_headers(token),
     )
     for attempt in range(3):
         try:
