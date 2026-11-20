@@ -1,0 +1,18 @@
+{
+  // The PC141 assistant API: https://wlu-rag-api.nobodyknownothing.workers.dev
+  "name": "wlu-rag-api",
+  "main": "src/worker.py",
+  "compatibility_date": "2026-10-01",
+  // Python Worker with the runtime's built-in `workers` module, so no packages need installing
+  // and `npx wrangler deploy` is the whole deploy.
+  "compatibility_flags": ["python_workers", "disable_python_external_sdk"],
+  // The corpus files built by scripts/build_corpus.py, read from disk by src/retrieval.py.
+  "rules": [{ "type": "Data", "globs": ["**/*.json"], "fallthrough": false }],
+  "ai": { "binding": "AI" },
+  // Workers Logs keeps the one line src/worker.py prints per question.
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  "vars": {
+    // The only website allowed to call the API from a browser (plus localhost:8000 for testing).
+    "ALLOWED_ORIGIN": "https://pc141-assistant.vercel.app"
+  }
+}

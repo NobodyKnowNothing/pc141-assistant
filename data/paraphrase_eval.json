@@ -18,7 +18,7 @@
   {"id": "Q17", "file": "PC141tutorialRules.pdf", "section": "Permitted Resources", "rewordings": ["can i use my notes in the tutorial", "is the tutorial open book", "what am i allowed to use on tutorial reports", "textbook allowed in tutorial?"]},
   {"id": "Q18", "file": "PC141tutorialRules.pdf", "section": "Attendance and Grading Policies", "rewordings": ["my tutorial mark is wrong", "how long to dispute a tutorial grade", "tutorial grade concern deadline", "who do i talk to about a tutorial mark"]},
   {"id": "Q19", "file": "PC141tutorialRules.pdf", "section": "Permitted Resources", "rewordings": ["can i use chatgpt in tutorial", "what happens if i use ai in tut", "using google during tutorial penalty", "is AI allowed on tutorial reports"]},
-  {"id": "E1", "file": "PC141labRules.pdf", "section": "Laboratory Schedule", "sections": {"lab": "L04"}, "rewordings": ["what time is lab", "lab schedule", "which day do I have lab", "first lab date"]},
+  {"id": "E1", "file": "PC141labRules.pdf", "section": "Laboratory Schedule", "rewordings": ["what time is lab", "lab schedule", "which day do I have lab", "first lab date"]},
   {"id": "E2", "file": "PC141LabSyllabus2026FRAG.pdf", "section": "Attendance and Makeup Policy", "rewordings": ["missed lab", "i skipped lab yesterday what now", "can i make up a lab i missed", "absent from lab"]},
   {"id": "E3", "file": "PC141labRules.pdf", "section": "Post lab 1", "rewordings": ["how to hand in post lab", "post-lab submission", "where does the post lab go", "upload post lab 1"]},
   {"id": "E4", "file": "PC141LabSyllabus2026FRAG.pdf", "section": "Plagiarism Policy", "rewordings": ["can i copy my partner's report", "cheating in lab", "is sharing data with my group allowed", "what counts as plagarism"]},

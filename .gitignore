@@ -1,12 +1,10 @@
-.env
+.env*
 .venv/
 .claude/
+.vercel
 __pycache__/
 *.pyc
-*.tmp
-.rag_cache/qdrant/.lock
-node_modules/
+.pytest_cache/
 .wrangler/
-policy_index/data/
-.vercel
-.env*
+node_modules/
+scripts/.page_cache/
