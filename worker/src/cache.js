@@ -5,7 +5,7 @@
 // a broken cache only costs the calls it would have saved.
 
 // Bump when retrieval, the prompt or the answer format changes, so old answers stop being served.
-export const CACHE_VERSION = 6; // 2: quotes are checked sentence by sentence; 3: wlu.ca site search off; 4: Gemma 4 answers; 5: semantic chunk labels; 6: fused final ranking with question vectors
+export const CACHE_VERSION = 7; // 2: quotes are checked sentence by sentence; 3: wlu.ca site search off; 4: Gemma 4 answers; 5: semantic chunk labels; 6: fused final ranking with question vectors; 7: question vectors as their own fused list
 export const TTL_S = 24 * 3600; // course documents are fixed; the policy index re-syncs weekly
 export const SHORT_TTL_S = 2 * 3600; // answers with a Laurier page unavailable: retried sooner
 const MEMORY_MAX = 200;

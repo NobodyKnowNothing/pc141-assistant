@@ -26,11 +26,14 @@ const courseIndex = new BM25(chunks.map((c) => c.enriched));
 const hasVectors = vectors.length === chunks.length; // stale vectors.json: fall back to lexical search
 const hasQuestionVectors = hasVectors && questionVectors.length > 0 && questionVectors.every(([i]) => i < chunks.length);
 
-// Vector scores for every chunk, best first. A chunk scores its best match among its own text and
-// its label's questions and "about" line, so a reworded question still lands near one of them.
-// QUESTION_VECTORS: "max" (default) folds them into one list, "list" ranks them as a separate list
-// for fusion, "off" uses the chunk text only (for comparing in an eval).
-function vectorLists(qv, how = "max") {
+// Vector scores for every chunk. Besides its own text, a chunk is matched on its label's questions
+// and "about" line (its best match among them), so a reworded question still lands near one of them.
+// QUESTION_VECTORS: "list" (default) ranks those matches as a list of their own for fusion, "max"
+// folds them into the text list, "off" uses the chunk text only. On 101 rewordings of the course
+// eval questions (scripts/eval_paraphrase.py), list / max / off found the right section in the top
+// 5 for 100 / 98 / 98 of them and first for 73 / 74 / 69 (MRR 0.837 / 0.837 / 0.807); the
+// reranker alone, without fusion, 98 and 72 (MRR 0.820).
+function vectorLists(qv, how = "list") {
   const byText = vectors.map((v) => cosine(qv, v));
   if (!hasQuestionVectors || how === "off") return [byText];
   const byQuestion = new Array(chunks.length).fill(-1);
